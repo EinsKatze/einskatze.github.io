@@ -1,0 +1,24 @@
+baseurl = "https://einskatze.github.io"
+title = "EinsKatze"
+theme = "nightfall"
+languagecode = "en"
+
+[menu]
+  [[menu.header]]
+    name = "blog"
+    weight = 0
+    url = "posts"
+  [[menu.header]]
+    name = "about"
+    weight = 1
+    url = "about"
+
+[params]
+author = "EinsKatze"
+user = "einskatze"
+hostname = "github.io"
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/einskatze"
