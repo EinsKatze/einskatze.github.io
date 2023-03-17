@@ -12,6 +12,10 @@ languagecode = "en"
     name = "about"
     weight = 1
     url = "about/about"
+  [[menu.header]]
+    name = "contact"
+    weight = 2
+    url = "contact/contact"
 
 [params]
 author = "EinsKatze"
