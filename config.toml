@@ -16,6 +16,10 @@ languagecode = "en"
     name = "contact"
     weight = 2
     url = "contact"
+  [[menu.header]]
+    name = "gpg"
+    weight = 3
+    url = "gpg"
 
 [params]
 author = "einskatze"
