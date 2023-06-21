@@ -12,4 +12,4 @@ Platforms:
 
 1. [Session](https://getsession.org/): 05c25a389698503b2a294754b21561badc9491c9dcb2c4dd7fd7035cbf3c6fa047
 
-3. Discord: EinsKatze²#9444
+3. Discord: einskadse
