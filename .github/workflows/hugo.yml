@@ -1,11 +1,14 @@
+# workflow for building and deploying a Hugo site to GitHub Pages
 ---
-name: Deploy Hugo site via GitHub Pages
+name: Deploy Hugo site via GitHub Pages 
 
 on:
   push:
     branches:
       - main # Set a branch to deploy
-  pull_request:
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -14,7 +17,7 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v4.1.1
         with:
           submodules: true # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
