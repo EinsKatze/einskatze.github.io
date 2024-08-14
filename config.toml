@@ -25,6 +25,7 @@ languagecode = "en"
 author = "einskatze"
 user = "einskatze"
 hostname = "github.io"
+description = "If buying isn't owning, piracy isn't theft."
 
 [[params.social]]
 key = 0
