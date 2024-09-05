@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EinsKatze</title><link>https://einskatze.github.io/</link><description>Recent content on EinsKatze</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 28 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Do a quick system scan with ClamAV</title><link>https://einskatze.github.io/posts/clamav_quickscan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/clamav_quickscan/</guid><description>&lt;p>Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p>
-&lt;h1 id="download-clamav-no-install">Download ClamAV (no install)&lt;/h1>
-&lt;p>First go to the (&lt;a href="https://github.com/Cisco-Talos/clamav/releases">GitHub Repository of ClamAV&lt;/a>) and download the latest release.
+&lt;h2 id="download-clamav-no-install">Download ClamAV (no install)&lt;/h2>
+&lt;p>First go to the &lt;a href="https://github.com/Cisco-Talos/clamav/releases">GitHub Repository of ClamAV&lt;/a> and download the latest release.
 Extract the contents of the zip file.&lt;/p>
-&lt;h1 id="downloading-the-clamav-databases">Downloading the ClamAV Databases&lt;/h1>
+&lt;h2 id="downloading-the-clamav-databases">Downloading the ClamAV Databases&lt;/h2>
 &lt;p>You need to create a config for freshclam.exe, you can just copy the example from the conf_examples folder and remove the &amp;ldquo;Example&amp;rdquo; line and change the folder for the database.&lt;/p></description></item><item><title>My Public GPG Key</title><link>https://einskatze.github.io/gpg/</link><pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/gpg/</guid><description>&lt;p>This Public Key uses a fake mail. For ways to contact me look at &lt;a href="../contact">this&lt;/a>.&lt;/p>
 &lt;pre tabindex="0">&lt;code>-----BEGIN PGP PUBLIC KEY BLOCK-----
 
@@ -56,7 +56,7 @@ z3BiXU/aQ3lpSSzc49Y3XTHDCT/m/TJvhUxVnDB/VyiadQJumRO/3Y6s4oWPrgcr
 Q5wSaJdLDD2HlwkJd1c=
 =acLF
 -----END PGP PUBLIC KEY BLOCK-----
-&lt;/code>&lt;/pr</description></item><item><title>About me</title><link>https://einskatze.github.io/about/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/about/</guid><description>&lt;p>My name is EinsKatze, also known as Pascal, and I am currently undergoing an apprenticeship as an IT specialist for system integration.&lt;/p>
+&lt;/code>&lt;/pr</description></item><item><title>About me</title><link>https://einskatze.github.io/about/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/about/</guid><description>&lt;p>My name is EinsKatze, also known as Pascal, and a few motnhs ago I finished an apprenticeship as an IT specialist for system integration.&lt;/p>
 &lt;p>Im into linux and privacy, but overall i really like all kinds of tech.&lt;/p>
 &lt;p>As you may have already noticed from my other &lt;a href="../contact">profiles&lt;/a> such as discord or github, i really like cats.&lt;/p>
 &lt;p>Keep an eye out for future updates to this page.&lt;/p></description></item><item><title>Contact</title><link>https://einskatze.github.io/contact/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/contact/</guid><description>&lt;p>Platforms, with a hyperlink to their website, are open source &amp;amp; end-to-end encrypted.&lt;/p>
