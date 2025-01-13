@@ -1,4 +1,11 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EinsKatze</title><link>https://einskatze.github.io/posts/</link><description>Recent content in Posts on EinsKatze</description><generator>Hugo</generator><language>en</language><lastBuildDate>Sun, 28 Jul 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>Do a quick system scan with ClamAV</title><link>https://einskatze.github.io/posts/clamav_quickscan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/clamav_quickscan/</guid><description>&lt;p>Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EinsKatze</title><link>https://einskatze.github.io/posts/</link><description>Recent content in Posts on EinsKatze</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>List of Interesting Things</title><link>https://einskatze.github.io/posts/interesting_things/</link><pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/interesting_things/</guid><description>&lt;ul>
+&lt;li>Website themes with uBlock Origin&lt;/li>
+&lt;li>
+&lt;ul>
+&lt;li>&lt;a href="https://darekkay.com/blog/ublock-website-themes/">https://darekkay.com/blog/ublock-website-themes/&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul></description></item><item><title>Do a quick system scan with ClamAV</title><link>https://einskatze.github.io/posts/clamav_quickscan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/clamav_quickscan/</guid><description>&lt;p>Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p>
 &lt;h2 id="download-clamav-no-install">Download ClamAV (no install)&lt;/h2>
 &lt;p>First go to the &lt;a href="https://github.com/Cisco-Talos/clamav/releases">GitHub Repository of ClamAV&lt;/a> and download the latest release.
 Extract the contents of the zip file.&lt;/p>
