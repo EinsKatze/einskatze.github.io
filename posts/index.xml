@@ -1,8 +1,68 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EinsKatze</title><link>https://einskatze.github.io/posts/</link><description>Recent content in Posts on EinsKatze</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>List of Interesting Things</title><link>https://einskatze.github.io/posts/interesting_things/</link><pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/interesting_things/</guid><description>&lt;ul>
-&lt;li>Website themes with uBlock Origin&lt;/li>
-&lt;li>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EinsKatze</title><link>https://einskatze.github.io/posts/</link><description>Recent content in Posts on EinsKatze</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>List of Interesting Things</title><link>https://einskatze.github.io/posts/interesting_things/</link><pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/interesting_things/</guid><description>&lt;h2 id="torrenting--piracy">Torrenting / Piracy&lt;/h2>
 &lt;ul>
-&lt;li>&lt;a href="https://darekkay.com/blog/ublock-website-themes/">https://darekkay.com/blog/ublock-website-themes/&lt;/a>&lt;/li>
+&lt;li>
+&lt;p>A curated list of (not only) German piracy sites&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;blockquote>
+&lt;p>&lt;a href="https://github.com/SeppPenner/awesome-german-piracy">https://github.com/SeppPenner/awesome-german-piracy&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>German Torrents&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;blockquote>
+&lt;p>&lt;a href="https://github.com/milahu/deutschetorrents">https://github.com/milahu/deutschetorrents&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="screensharing">Screensharing&lt;/h2>
+&lt;ul>
+&lt;li>Ultra low latency screen and camera sharing (Browser Based)
+&lt;ul>
+&lt;li>
+&lt;blockquote>
+&lt;p>&lt;a href="https://pin.gl/">https://pin.gl/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="misc">Misc&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>Website themes with uBlock Origin&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;blockquote>
+&lt;p>&lt;a href="https://darekkay.com/blog/ublock-website-themes/">https://darekkay.com/blog/ublock-website-themes/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Displaying Website Content on an E-Ink Displaying&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;blockquote>
+&lt;p>&lt;a href="https://mfasold.net/blog/displaying-website-content-on-an-e-ink-display/">https://mfasold.net/blog/displaying-website-content-on-an-e-ink-display/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;/li>
+&lt;/ul>
+&lt;/li>
+&lt;li>
+&lt;p>Departure Mono - A monospaced pixel font with a lo-fi, techy vibe.&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;blockquote>
+&lt;p>&lt;a href="https://departuremono.com/">https://departuremono.com/&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;/li>
 &lt;/ul>
 &lt;/li>
 &lt;/ul></description></item><item><title>Do a quick system scan with ClamAV</title><link>https://einskatze.github.io/posts/clamav_quickscan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/clamav_quickscan/</guid><description>&lt;p>Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p>
