@@ -3,7 +3,14 @@ title: "List of Interesting Things"
 date: 2025-01-13
 draft: false
 ---
-## Torrenting / Piracy
+## Torrenting / Piracy / Archiving
+- Save Reddit Threads as Markdown file 
+    - Before weird Mods remove them or Reddit pulls weird moves again
+    - >https://farnots.github.io/RedditToMarkdown/
+
+- Convert format between different markup languages (Ex: HTML<->MD) 
+    - >https://github.com/jgm/pandoc
+
 - A curated list of (not only) German piracy sites
     - >https://github.com/SeppPenner/awesome-german-piracy
 
