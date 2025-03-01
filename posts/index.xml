@@ -1,69 +1,101 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on EinsKatze</title><link>https://einskatze.github.io/posts/</link><description>Recent content in Posts on EinsKatze</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml"/><item><title>List of Interesting Things</title><link>https://einskatze.github.io/posts/interesting_things/</link><pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/interesting_things/</guid><description>&lt;h2 id="torrenting--piracy--archiving">Torrenting / Piracy / Archiving&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>Save Reddit Threads as Markdown file&lt;/p>
-&lt;ul>
-&lt;li>Before weird Mods remove them or Reddit pulls weird moves again&lt;/li>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://farnots.github.io/RedditToMarkdown/">https://farnots.github.io/RedditToMarkdown/&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://github.com/jgm/pandoc">https://github.com/jgm/pandoc&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>A curated list of (not only) German piracy sites&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://github.com/SeppPenner/awesome-german-piracy">https://github.com/SeppPenner/awesome-german-piracy&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>German Torrents&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://github.com/milahu/deutschetorrents">https://github.com/milahu/deutschetorrents&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="screensharing">Screensharing&lt;/h2>
-&lt;ul>
-&lt;li>Ultra low latency screen and camera sharing (Browser Based)
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://pin.gl/">https://pin.gl/&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="misc">Misc&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>Website themes with uBlock Origin&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://darekkay.com/blog/ublock-website-themes/">https://darekkay.com/blog/ublock-website-themes/&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Displaying Website Content on an E-Ink Displaying&lt;/p></description></item><item><title>Do a quick system scan with ClamAV</title><link>https://einskatze.github.io/posts/clamav_quickscan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/clamav_quickscan/</guid><description>&lt;p>Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p>
-&lt;h2 id="download-clamav-no-install">Download ClamAV (no install)&lt;/h2>
-&lt;p>First go to the &lt;a href="https://github.com/Cisco-Talos/clamav/releases">GitHub Repository of ClamAV&lt;/a> and download the latest release.
-Extract the contents of the zip file.&lt;/p>
-&lt;h2 id="downloading-the-clamav-databases">Downloading the ClamAV Databases&lt;/h2>
-&lt;p>You need to create a config for freshclam.exe, you can just copy the example from the conf_examples folder and remove the &amp;ldquo;Example&amp;rdquo; line and change the folder for the database.&lt;/p></description></item><item><title>Soon™️</title><link>https://einskatze.github.io/posts/soon/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/soon/</guid><description>&lt;p>if u have any good ideas for a blog post - &lt;a href="../../contact/contact/">send me a message&lt;/a>.&lt;/p></description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on EinsKatze</title>
+    <link>https://einskatze.github.io/posts/</link>
+    <description>Recent content in Posts on EinsKatze</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List of Interesting Things</title>
+      <link>https://einskatze.github.io/posts/interesting_things/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/interesting_things/</guid>
+      <description>&lt;h2 id=&#34;torrenting--piracy--archiving&#34;&gt;Torrenting / Piracy / Archiving&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Save Reddit Threads as Markdown file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Before weird Mods remove them or Reddit pulls weird moves again&lt;/li&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://farnots.github.io/RedditToMarkdown/&#34;&gt;https://farnots.github.io/RedditToMarkdown/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jgm/pandoc&#34;&gt;https://github.com/jgm/pandoc&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A curated list of (not only) German piracy sites&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/SeppPenner/awesome-german-piracy&#34;&gt;https://github.com/SeppPenner/awesome-german-piracy&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;German Torrents&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/milahu/deutschetorrents&#34;&gt;https://github.com/milahu/deutschetorrents&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screensharing&#34;&gt;Screensharing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ultra low latency screen and camera sharing (Browser Based)
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://pin.gl/&#34;&gt;https://pin.gl/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Website themes with uBlock Origin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://darekkay.com/blog/ublock-website-themes/&#34;&gt;https://darekkay.com/blog/ublock-website-themes/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Displaying Website Content on an E-Ink Displaying&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Do a quick system scan with ClamAV</title>
+      <link>https://einskatze.github.io/posts/clamav_quickscan/</link>
+      <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/clamav_quickscan/</guid>
+      <description>&lt;p&gt;Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p&gt;
+&lt;h2 id=&#34;download-clamav-no-install&#34;&gt;Download ClamAV (no install)&lt;/h2&gt;
+&lt;p&gt;First go to the &lt;a href=&#34;https://github.com/Cisco-Talos/clamav/releases&#34;&gt;GitHub Repository of ClamAV&lt;/a&gt; and download the latest release.
+Extract the contents of the zip file.&lt;/p&gt;
+&lt;h2 id=&#34;downloading-the-clamav-databases&#34;&gt;Downloading the ClamAV Databases&lt;/h2&gt;
+&lt;p&gt;You need to create a config for freshclam.exe, you can just copy the example from the conf_examples folder and remove the &amp;ldquo;Example&amp;rdquo; line and change the folder for the database.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Soon™️</title>
+      <link>https://einskatze.github.io/posts/soon/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/soon/</guid>
+      <description>&lt;p&gt;if u have any good ideas for a blog post - &lt;a href=&#34;../../contact/contact/&#34;&gt;send me a message&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,1 +1,35 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml"><url><loc>https://einskatze.github.io/</loc><lastmod>2025-01-13T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/posts/interesting_things/</loc><lastmod>2025-01-13T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/posts/</loc><lastmod>2025-01-13T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/posts/clamav_quickscan/</loc><lastmod>2024-07-28T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/gpg/</loc><lastmod>2023-05-11T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/about/</loc><lastmod>2023-03-07T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/contact/</loc><lastmod>2023-03-07T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/posts/soon/</loc><lastmod>2023-03-07T00:00:00+00:00</lastmod></url><url><loc>https://einskatze.github.io/categories/</loc></url><url><loc>https://einskatze.github.io/tags/</loc></url></urlset>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://einskatze.github.io/</loc>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/posts/interesting_things/</loc>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/posts/</loc>
+    <lastmod>2025-01-13T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/posts/clamav_quickscan/</loc>
+    <lastmod>2024-07-28T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/gpg/</loc>
+    <lastmod>2023-05-11T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/about/</loc>
+    <lastmod>2023-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/contact/</loc>
+    <lastmod>2023-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/posts/soon/</loc>
+    <lastmod>2023-03-07T00:00:00+00:00</lastmod>
+  </url><url>
+    <loc>https://einskatze.github.io/categories/</loc>
+  </url><url>
+    <loc>https://einskatze.github.io/search/</loc>
+  </url><url>
+    <loc>https://einskatze.github.io/tags/</loc>
+  </url>
+</urlset>

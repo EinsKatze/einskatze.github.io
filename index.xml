@@ -1,73 +1,102 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>EinsKatze</title><link>https://einskatze.github.io/</link><description>Recent content on EinsKatze</description><generator>Hugo</generator><language>en</language><lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>List of Interesting Things</title><link>https://einskatze.github.io/posts/interesting_things/</link><pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/interesting_things/</guid><description>&lt;h2 id="torrenting--piracy--archiving">Torrenting / Piracy / Archiving&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>Save Reddit Threads as Markdown file&lt;/p>
-&lt;ul>
-&lt;li>Before weird Mods remove them or Reddit pulls weird moves again&lt;/li>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://farnots.github.io/RedditToMarkdown/">https://farnots.github.io/RedditToMarkdown/&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://github.com/jgm/pandoc">https://github.com/jgm/pandoc&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>A curated list of (not only) German piracy sites&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://github.com/SeppPenner/awesome-german-piracy">https://github.com/SeppPenner/awesome-german-piracy&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>German Torrents&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://github.com/milahu/deutschetorrents">https://github.com/milahu/deutschetorrents&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="screensharing">Screensharing&lt;/h2>
-&lt;ul>
-&lt;li>Ultra low latency screen and camera sharing (Browser Based)
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://pin.gl/">https://pin.gl/&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;/ul>
-&lt;h2 id="misc">Misc&lt;/h2>
-&lt;ul>
-&lt;li>
-&lt;p>Website themes with uBlock Origin&lt;/p>
-&lt;ul>
-&lt;li>
-&lt;blockquote>
-&lt;p>&lt;a href="https://darekkay.com/blog/ublock-website-themes/">https://darekkay.com/blog/ublock-website-themes/&lt;/a>&lt;/p>&lt;/blockquote>
-&lt;/li>
-&lt;/ul>
-&lt;/li>
-&lt;li>
-&lt;p>Displaying Website Content on an E-Ink Displaying&lt;/p></description></item><item><title>Do a quick system scan with ClamAV</title><link>https://einskatze.github.io/posts/clamav_quickscan/</link><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/clamav_quickscan/</guid><description>&lt;p>Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p>
-&lt;h2 id="download-clamav-no-install">Download ClamAV (no install)&lt;/h2>
-&lt;p>First go to the &lt;a href="https://github.com/Cisco-Talos/clamav/releases">GitHub Repository of ClamAV&lt;/a> and download the latest release.
-Extract the contents of the zip file.&lt;/p>
-&lt;h2 id="downloading-the-clamav-databases">Downloading the ClamAV Databases&lt;/h2>
-&lt;p>You need to create a config for freshclam.exe, you can just copy the example from the conf_examples folder and remove the &amp;ldquo;Example&amp;rdquo; line and change the folder for the database.&lt;/p></description></item><item><title>My Public GPG Key</title><link>https://einskatze.github.io/gpg/</link><pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/gpg/</guid><description>&lt;p>This Public Key uses a fake mail. For ways to contact me look at &lt;a href="../contact">this&lt;/a>.&lt;/p>
-&lt;pre tabindex="0">&lt;code>-----BEGIN PGP PUBLIC KEY BLOCK-----
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>EinsKatze</title>
+    <link>https://einskatze.github.io/</link>
+    <description>Recent content on EinsKatze</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>List of Interesting Things</title>
+      <link>https://einskatze.github.io/posts/interesting_things/</link>
+      <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/interesting_things/</guid>
+      <description>&lt;h2 id=&#34;torrenting--piracy--archiving&#34;&gt;Torrenting / Piracy / Archiving&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Save Reddit Threads as Markdown file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Before weird Mods remove them or Reddit pulls weird moves again&lt;/li&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://farnots.github.io/RedditToMarkdown/&#34;&gt;https://farnots.github.io/RedditToMarkdown/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jgm/pandoc&#34;&gt;https://github.com/jgm/pandoc&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;A curated list of (not only) German piracy sites&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/SeppPenner/awesome-german-piracy&#34;&gt;https://github.com/SeppPenner/awesome-german-piracy&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;German Torrents&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/milahu/deutschetorrents&#34;&gt;https://github.com/milahu/deutschetorrents&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;screensharing&#34;&gt;Screensharing&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ultra low latency screen and camera sharing (Browser Based)
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://pin.gl/&#34;&gt;https://pin.gl/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Website themes with uBlock Origin&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://darekkay.com/blog/ublock-website-themes/&#34;&gt;https://darekkay.com/blog/ublock-website-themes/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Displaying Website Content on an E-Ink Displaying&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Do a quick system scan with ClamAV</title>
+      <link>https://einskatze.github.io/posts/clamav_quickscan/</link>
+      <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/clamav_quickscan/</guid>
+      <description>&lt;p&gt;Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p&gt;
+&lt;h2 id=&#34;download-clamav-no-install&#34;&gt;Download ClamAV (no install)&lt;/h2&gt;
+&lt;p&gt;First go to the &lt;a href=&#34;https://github.com/Cisco-Talos/clamav/releases&#34;&gt;GitHub Repository of ClamAV&lt;/a&gt; and download the latest release.
+Extract the contents of the zip file.&lt;/p&gt;
+&lt;h2 id=&#34;downloading-the-clamav-databases&#34;&gt;Downloading the ClamAV Databases&lt;/h2&gt;
+&lt;p&gt;You need to create a config for freshclam.exe, you can just copy the example from the conf_examples folder and remove the &amp;ldquo;Example&amp;rdquo; line and change the folder for the database.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Public GPG Key</title>
+      <link>https://einskatze.github.io/gpg/</link>
+      <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/gpg/</guid>
+      <description>&lt;p&gt;This Public Key uses a fake mail. For ways to contact me look at &lt;a href=&#34;../contact&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGQ+pG0BEADIjC7teL7HXt2h7GyOWOV6mnMNzrEf2MtpAAo1pgePlAMEM4K9
 y+yYoAuD1eu1Ap1aU7KwLMWTlpKYehQQYg6ylk7XASLE7lT8XQuTGXW4IfGsxXIw
@@ -119,23 +148,47 @@ z3BiXU/aQ3lpSSzc49Y3XTHDCT/m/TJvhUxVnDB/VyiadQJumRO/3Y6s4oWPrgcr
 Q5wSaJdLDD2HlwkJd1c=
 =acLF
 -----END PGP PUBLIC KEY BLOCK-----
-&lt;/code>&lt;/pre></description></item><item><title>About me</title><link>https://einskatze.github.io/about/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/about/</guid><description>&lt;p>My name is EinsKatze, also known as Pascal, and a few months ago I finished an apprenticeship as an IT specialist for system integration.&lt;/p>
-&lt;p>Im into linux and privacy, but overall i really like all kinds of tech.&lt;/p>
-&lt;p>As you may have already noticed from my other &lt;a href="../contact">profiles&lt;/a> such as discord or github, i really like cats.&lt;/p>
-&lt;p>Keep an eye out for future updates to this page.&lt;/p></description></item><item><title>Contact</title><link>https://einskatze.github.io/contact/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/contact/</guid><description>&lt;p>Platforms, with a hyperlink to their website, are open source &amp;amp; end-to-end encrypted.&lt;/p>
-&lt;p>&lt;a href="../gpg">My Public GPG Key&lt;/a>&lt;/p>
-&lt;hr>
-&lt;p>Platforms:&lt;/p>
-&lt;ol>
-&lt;li>
-&lt;p>&lt;a href="https://getsession.org/">Session&lt;/a>: 05c25a389698503b2a294754b21561badc9491c9dcb2c4dd7fd7035cbf3c6fa047&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>&lt;a href="https://matrix.org">Matrix&lt;/a>: &lt;a href="https://matrix.to/#/@einskatze:matrix.org">https://matrix.to/#/@einskatze:matrix.org&lt;/a>&lt;/p>
-&lt;/li>
-&lt;li>
-&lt;p>Discord: einskatze1337 (Old Account (einskadse) has been suspended)&lt;/p>
-&lt;/li>
-&lt;/ol>
-&lt;hr>
-&lt;h5 id="last-update-4th-september-2024">Last Update: 4th September 2024&lt;/h5></description></item><item><title>Soon™️</title><link>https://einskatze.github.io/posts/soon/</link><pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate><guid>https://einskatze.github.io/posts/soon/</guid><description>&lt;p>if u have any good ideas for a blog post - &lt;a href="../../contact/contact/">send me a message&lt;/a>.&lt;/p></description></item></channel></rss>
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>https://einskatze.github.io/about/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/about/</guid>
+      <description>&lt;p&gt;My name is EinsKatze, also known as Pascal, and a few months ago I finished an apprenticeship as an IT specialist for system integration.&lt;/p&gt;
+&lt;p&gt;Im into linux and privacy, but overall i really like all kinds of tech.&lt;/p&gt;
+&lt;p&gt;As you may have already noticed from my other &lt;a href=&#34;../contact&#34;&gt;profiles&lt;/a&gt; such as discord or github, i really like cats.&lt;/p&gt;
+&lt;p&gt;Keep an eye out for future updates to this page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://einskatze.github.io/contact/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/contact/</guid>
+      <description>&lt;p&gt;Platforms, with a hyperlink to their website, are open source &amp;amp; end-to-end encrypted.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;../gpg&#34;&gt;My Public GPG Key&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Platforms:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://getsession.org/&#34;&gt;Session&lt;/a&gt;: 05c25a389698503b2a294754b21561badc9491c9dcb2c4dd7fd7035cbf3c6fa047&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://matrix.org&#34;&gt;Matrix&lt;/a&gt;: &lt;a href=&#34;https://matrix.to/#/@einskatze:matrix.org&#34;&gt;https://matrix.to/#/@einskatze:matrix.org&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Discord: einskatze1337 (Old Account (einskadse) has been suspended)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;last-update-4th-september-2024&#34;&gt;Last Update: 4th September 2024&lt;/h5&gt;</description>
+    </item>
+    <item>
+      <title>Soon™️</title>
+      <link>https://einskatze.github.io/posts/soon/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/soon/</guid>
+      <description>&lt;p&gt;if u have any good ideas for a blog post - &lt;a href=&#34;../../contact/contact/&#34;&gt;send me a message&lt;/a&gt;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
