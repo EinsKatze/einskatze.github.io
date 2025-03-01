@@ -1,32 +1,140 @@
 baseurl = "https://einskatze.github.io"
 title = "EinsKatze"
-theme = "nightfall"
+theme = "PaperMod"
 languagecode = "en"
 
-[menu]
-  [[menu.header]]
-    name = "posts"
-    weight = 0
-    url = "posts/"
-  [[menu.header]]
-    name = "about"
-    weight = 1
-    url = "about"
-  [[menu.header]]
-    name = "contact"
-    weight = 2
-    url = "contact"
-  [[menu.header]]
-    name = "gpg"
-    weight = 3
-    url = "gpg"
+[minify]
+disableXML = true
+minifyOutput = true
 
 [params]
-author = "einskatze"
-user = "einskatze"
-hostname = "github.io"
+title = "EinsKatze"
+description = "EinsKatze's Blog"
+author = "EinsKatze"
+defaultTheme = "dark"
+ShowReadingTime = true
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = false
+ShowWordCount = true
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = false
+tocopen = false
 
-[[params.social]]
-key = 0
-name = "github"
-url = "https://github.com/einskatze"
+[outputs]
+home = [ "HTML", "RSS", "JSON" ]
+
+[params.assets]
+  favicon = "/favicon.ico"
+  #favicon16x16 = "/favicon-16x16.png"
+  #favicon32x32 = "/favicon-32x32.png"
+  apple_touch_icon = "/icon.png"
+  safari_pinned_tab = "/icon.png"
+
+  [params.label]
+  text = "Home - EinsKatze"
+  icon = "/icon.png"
+  iconHeight = 35
+
+  [params.profileMode]
+  enabled = false
+  title = "EinsKatze"
+  subtitle = "Hi there 👋"
+  imageUrl = "/icon.png"
+  imageWidth = 120
+  imageHeight = 120
+  imageTitle = "catto"
+
+    [[params.profileMode.buttons]]
+    name = "Posts"
+    url = "posts"
+
+    [[params.profileMode.buttons]]
+    name = "Contact"
+    url = "contact"
+
+    [[params.profileMode.buttons]]
+    name = "About"
+    url = "about"
+
+  [params.homeInfoParams]
+  Title = "Hi there 👋"
+  Content = "Welcome to my blog"
+
+  [[params.socialIcons]]
+  name = "x"
+  url = "https://x.com/vyuji_"
+
+  #[[params.socialIcons]]
+  #name = "stackoverflow"
+  #url = "https://stackoverflow.com"
+
+  [[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/einskatze"
+
+#[params.analytics.google]
+#SiteVerificationTag = "XYZabc"
+
+#[params.analytics.bing]
+#SiteVerificationTag = "XYZabc"
+
+#[params.analytics.yandex]
+#SiteVerificationTag = "XYZabc"
+
+  [params.cover]
+  hidden = true
+  hiddenInList = true
+  hiddenInSingle = true
+
+  #[params.editPost]
+  #URL = "https://github.com/<path_to_repo>/content"
+  #Text = "Suggest Changes"
+  #appendFilePath = true
+
+  [params.fuseOpts]
+  isCaseSensitive = false
+  shouldSort = true
+  location = 0
+  distance = 1_000
+  threshold = 0.4
+  minMatchCharLength = 0
+  limit = 10
+  keys = [ "title", "permalink", "summary", "content" ]
+
+  [[menu.main]]
+  identifier = "about"
+  name = "about"
+  url = "/about"
+  weight = 10
+
+  [[menu.main]]
+  identifier = "contact"
+  name = "contact"
+  url = "/contact"
+  weight = 20
+
+  [[menu.main]]
+  identifier = "gpg"
+  name = "gpg"
+  url = "/gpg"
+  weight = 30
+
+  [[menu.main]]
+  identifier = "posts"
+  name = "posts"
+  url = "/posts"
+  weight = 40
+
+  #[[menu.main]]
+  #identifier = "example"
+  #name = "example.org"
+  #url = "https://example.org"
+  #weight = 30
