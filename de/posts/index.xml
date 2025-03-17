@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Posts on EinsKatze</title>
+    <link>https://einskatze.github.io/de/posts/</link>
+    <description>Recent content in Posts on EinsKatze</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://einskatze.github.io/de/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title>
+      <link>https://einskatze.github.io/de/posts/win10_iot_upgrade/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/de/posts/win10_iot_upgrade/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;EinsKatze:&lt;br&gt;
+Moin Freunde, das ist im grunde ein Gastpost. Die komplette anleitung wurde von TimLew geschrieben, shoutout to him! 💖
+Sein Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;schritt-1-iso-datei-herunterladen&#34;&gt;Schritt 1: ISO-Datei herunterladen&lt;/h2&gt;
+&lt;p&gt;Lade die Windows 10 Enterprise LTSC ISO herunter:
+&lt;strong&gt;Download Link&lt;/strong&gt;:
+&lt;a href=&#34;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&#34;&gt;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&lt;/a&gt;
+Hinweis: Dies ist die Standard-Version von Windows 10 Enterprise LTSC (ohne IoT), aber sie behält deine Systemsprache bei Deutsch. Das passen wir später an.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;schritt-2-systemsprache-überprüfen&#34;&gt;Schritt 2: Systemsprache überprüfen&lt;/h2&gt;
+&lt;p&gt;Stelle sicher, dass deine Systemsprache auf &lt;strong&gt;Deutsch&lt;/strong&gt; eingestellt ist. Führe dazu in der PowerShell folgenden Befehl aus:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

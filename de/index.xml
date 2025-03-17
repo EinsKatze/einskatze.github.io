@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>EinsKatze</title>
+    <link>https://einskatze.github.io/de/</link>
+    <description>Recent content on EinsKatze</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>de</language>
+    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://einskatze.github.io/de/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title>
+      <link>https://einskatze.github.io/de/posts/win10_iot_upgrade/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/de/posts/win10_iot_upgrade/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;EinsKatze:&lt;br&gt;
+Moin Freunde, das ist im grunde ein Gastpost. Die komplette anleitung wurde von TimLew geschrieben, shoutout to him! 💖
+Sein Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;schritt-1-iso-datei-herunterladen&#34;&gt;Schritt 1: ISO-Datei herunterladen&lt;/h2&gt;
+&lt;p&gt;Lade die Windows 10 Enterprise LTSC ISO herunter:
+&lt;strong&gt;Download Link&lt;/strong&gt;:
+&lt;a href=&#34;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&#34;&gt;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&lt;/a&gt;
+Hinweis: Dies ist die Standard-Version von Windows 10 Enterprise LTSC (ohne IoT), aber sie behält deine Systemsprache bei Deutsch. Das passen wir später an.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;schritt-2-systemsprache-überprüfen&#34;&gt;Schritt 2: Systemsprache überprüfen&lt;/h2&gt;
+&lt;p&gt;Stelle sicher, dass deine Systemsprache auf &lt;strong&gt;Deutsch&lt;/strong&gt; eingestellt ist. Führe dazu in der PowerShell folgenden Befehl aus:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>About me</title>
+      <link>https://einskatze.github.io/de/about/</link>
+      <pubDate>Mon, 03 Mar 2025 16:00:00 +0100</pubDate>
+      <guid>https://einskatze.github.io/de/about/</guid>
+      <description>&lt;p&gt;My name is EinsKatze, also known as Pascal, and last year I finished an apprenticeship as an IT specialist for system integration.&lt;/p&gt;
+&lt;p&gt;Im into linux &amp;amp; privacy and self-hosting stuff, but overall i really like all kinds of tech.&lt;/p&gt;
+&lt;p&gt;As you may have already noticed from the favicon or my &lt;a href=&#34;https://einskatze.github.io/de/contact/&#34;&gt;profiles&lt;/a&gt; such as discord or github, i really like cats.&lt;/p&gt;
+&lt;p&gt;Keep an eye out for future updates to this page.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>My Public GPG Key</title>
+      <link>https://einskatze.github.io/de/gpg/</link>
+      <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/de/gpg/</guid>
+      <description>&lt;p&gt;This Public Key uses a fake mail. For ways to contact me look at &lt;a href=&#34;https://einskatze.github.io/de/contact/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+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
+Q5wSaJdLDD2HlwkJd1c=
+=acLF
+-----END PGP PUBLIC KEY BLOCK-----
+&lt;/code&gt;&lt;/pre&gt;</description>
+    </item>
+    <item>
+      <title>Contact</title>
+      <link>https://einskatze.github.io/de/contact/</link>
+      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/de/contact/</guid>
+      <description>&lt;p&gt;Platforms, with a hyperlink to their website, are open source &amp;amp; end-to-end encrypted.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://einskatze.github.io/de/gpg/&#34;&gt;My Public GPG Key&lt;/a&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Platforms:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://getsession.org/&#34;&gt;Session&lt;/a&gt;: 05c25a389698503b2a294754b21561badc9491c9dcb2c4dd7fd7035cbf3c6fa047&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://matrix.org&#34;&gt;Matrix&lt;/a&gt;: &lt;a href=&#34;https://matrix.to/#/@einskatze:matrix.org&#34;&gt;https://matrix.to/#/@einskatze:matrix.org&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Discord: einskatze1337 (Old Account (einskadse) has been suspended)&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h5 id=&#34;last-update-4th-september-2024&#34;&gt;Last Update: 4th September 2024&lt;/h5&gt;</description>
+    </item>
+  </channel>
+</rss>

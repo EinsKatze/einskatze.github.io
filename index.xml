@@ -6,8 +6,31 @@
     <description>Recent content on EinsKatze</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 03 Mar 2025 16:00:00 +0100</lastBuildDate>
+    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title>
+      <link>https://einskatze.github.io/posts/win10_iot_upgrade/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/win10_iot_upgrade/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;EinsKatze:&lt;br&gt;
+Hi everyone, this basically is a guest-post. This guide is entirely written by TimLew, shoutout to him! 💖
+His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;step-1-download-the-iso-file&#34;&gt;Step 1: Download the ISO File&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Download Link&lt;/strong&gt;:
+&lt;a href=&#34;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&#34;&gt;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This is the standard Windows 10 Enterprise LTSC ISO (non-IoT), but it retains your system language as German.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-2-verify-system-language&#34;&gt;Step 2: Verify System Language&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator.&lt;/li&gt;
+&lt;li&gt;Run:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dism /english /online /get-intl | find /i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Default system UI language&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the output shows German (&lt;code&gt;de-DE&lt;/code&gt;), proceed.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>About me</title>
       <link>https://einskatze.github.io/about/</link>
@@ -15,7 +38,7 @@
       <guid>https://einskatze.github.io/about/</guid>
       <description>&lt;p&gt;My name is EinsKatze, also known as Pascal, and last year I finished an apprenticeship as an IT specialist for system integration.&lt;/p&gt;
 &lt;p&gt;Im into linux &amp;amp; privacy and self-hosting stuff, but overall i really like all kinds of tech.&lt;/p&gt;
-&lt;p&gt;As you may have already noticed from the favicon or my &lt;a href=&#34;../contact&#34;&gt;profiles&lt;/a&gt; such as discord or github, i really like cats.&lt;/p&gt;
+&lt;p&gt;As you may have already noticed from the favicon or my &lt;a href=&#34;https://einskatze.github.io/contact/&#34;&gt;profiles&lt;/a&gt; such as discord or github, i really like cats.&lt;/p&gt;
 &lt;p&gt;Keep an eye out for future updates to this page.&lt;/p&gt;</description>
     </item>
     <item>
@@ -105,7 +128,7 @@ Extract the contents of the zip file.&lt;/p&gt;
       <link>https://einskatze.github.io/gpg/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/gpg/</guid>
-      <description>&lt;p&gt;This Public Key uses a fake mail. For ways to contact me look at &lt;a href=&#34;../contact&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;This Public Key uses a fake mail. For ways to contact me look at &lt;a href=&#34;https://einskatze.github.io/contact/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGQ+pG0BEADIjC7teL7HXt2h7GyOWOV6mnMNzrEf2MtpAAo1pgePlAMEM4K9
@@ -166,7 +189,7 @@ Q5wSaJdLDD2HlwkJd1c=
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/contact/</guid>
       <description>&lt;p&gt;Platforms, with a hyperlink to their website, are open source &amp;amp; end-to-end encrypted.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;../gpg&#34;&gt;My Public GPG Key&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://einskatze.github.io/gpg/&#34;&gt;My Public GPG Key&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
 &lt;p&gt;Platforms:&lt;/p&gt;
 &lt;ol&gt;
@@ -182,13 +205,6 @@ Q5wSaJdLDD2HlwkJd1c=
 &lt;/ol&gt;
 &lt;hr&gt;
 &lt;h5 id=&#34;last-update-4th-september-2024&#34;&gt;Last Update: 4th September 2024&lt;/h5&gt;</description>
-    </item>
-    <item>
-      <title>Soon™️</title>
-      <link>https://einskatze.github.io/posts/soon/</link>
-      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://einskatze.github.io/posts/soon/</guid>
-      <description>&lt;p&gt;if u have any good ideas for a blog post - &lt;a href=&#34;../../contact/contact/&#34;&gt;send me a message&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

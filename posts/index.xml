@@ -6,8 +6,31 @@
     <description>Recent content in Posts on EinsKatze</description>
     <generator>Hugo -- 0.145.0</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 13 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title>
+      <link>https://einskatze.github.io/posts/win10_iot_upgrade/</link>
+      <pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/win10_iot_upgrade/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;EinsKatze:&lt;br&gt;
+Hi everyone, this basically is a guest-post. This guide is entirely written by TimLew, shoutout to him! 💖
+His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;step-1-download-the-iso-file&#34;&gt;Step 1: Download the ISO File&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Download Link&lt;/strong&gt;:
+&lt;a href=&#34;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&#34;&gt;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This is the standard Windows 10 Enterprise LTSC ISO (non-IoT), but it retains your system language as German.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&#34;step-2-verify-system-language&#34;&gt;Step 2: Verify System Language&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;Open &lt;strong&gt;PowerShell&lt;/strong&gt; as Administrator.&lt;/li&gt;
+&lt;li&gt;Run:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-powershell&#34; data-lang=&#34;powershell&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;dism /english /online /get-intl | find /i &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Default system UI language&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;If the output shows German (&lt;code&gt;de-DE&lt;/code&gt;), proceed.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>List of Interesting Things</title>
       <link>https://einskatze.github.io/posts/interesting_things/</link>
@@ -89,13 +112,6 @@
 Extract the contents of the zip file.&lt;/p&gt;
 &lt;h2 id=&#34;downloading-the-clamav-databases&#34;&gt;Downloading the ClamAV Databases&lt;/h2&gt;
 &lt;p&gt;You need to create a config for freshclam.exe, you can just copy the example from the conf_examples folder and remove the &amp;ldquo;Example&amp;rdquo; line and change the folder for the database.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Soon™️</title>
-      <link>https://einskatze.github.io/posts/soon/</link>
-      <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
-      <guid>https://einskatze.github.io/posts/soon/</guid>
-      <description>&lt;p&gt;if u have any good ideas for a blog post - &lt;a href=&#34;../../contact/contact/&#34;&gt;send me a message&lt;/a&gt;.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
