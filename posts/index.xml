@@ -36,70 +36,35 @@ His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
       <link>https://einskatze.github.io/posts/interesting_things/</link>
       <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/posts/interesting_things/</guid>
-      <description>&lt;h2 id=&#34;torrenting--piracy--archiving&#34;&gt;Torrenting / Piracy / Archiving&lt;/h2&gt;
+      <description>&lt;blockquote&gt;
+&lt;p&gt;Last Modified: 24.03.2025 (German format, sorry)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;torrenting--piracy--archiving&#34;&gt;Torrenting / Piracy / Archiving&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Save Reddit Threads as Markdown file&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Before weird Mods remove them or Reddit pulls weird moves again&lt;/li&gt;
-&lt;li&gt;
+&lt;p&gt;&lt;a href=&#34;https://farnots.github.io/RedditToMarkdown/&#34;&gt;RedditToMarkDown&lt;/a&gt; - Save Reddit Threads as Markdown file&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://farnots.github.io/RedditToMarkdown/&#34;&gt;https://farnots.github.io/RedditToMarkdown/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Before weird Mods remove them or Reddit pulls weird moves again&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/jgm/pandoc&#34;&gt;https://github.com/jgm/pandoc&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/jgm/pandoc&#34;&gt;Pandoc&lt;/a&gt; - Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;A curated list of (not only) German piracy sites&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/SeppPenner/awesome-german-piracy&#34;&gt;https://github.com/SeppPenner/awesome-german-piracy&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
 &lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;German Torrents&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/milahu/deutschetorrents&#34;&gt;https://github.com/milahu/deutschetorrents&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/milahu/deutschetorrents&#34;&gt;German Torrents&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;screensharing&#34;&gt;Screensharing&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;Ultra low latency screen and camera sharing (Browser Based)
-&lt;ul&gt;
-&lt;li&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://pin.gl/&#34;&gt;https://pin.gl/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://pin.gl/&#34;&gt;Pin.gl&lt;/a&gt; - Ultra low latency screen and camera sharing (Browser Based)&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;Website themes with uBlock Origin&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://darekkay.com/blog/ublock-website-themes/&#34;&gt;https://darekkay.com/blog/ublock-website-themes/&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Displaying Website Content on an E-Ink Displaying&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://4get.ca/&#34;&gt;4get&lt;/a&gt; - a proxy search engine that doesn&amp;rsquo;t suck&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do a quick system scan with ClamAV</title>
