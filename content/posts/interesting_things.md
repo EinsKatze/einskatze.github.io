@@ -27,5 +27,6 @@ draft: false
 
 - Displaying Website Content on an E-Ink Displaying
     >https://mfasold.net/blog/displaying-website-content-on-an-e-ink-display/
-
-- [Departure Mono](https://departuremono.com/) - A monospaced pixel font with a lo-fi, techy vibe.
+    ### Fonts
+    - [Departure Mono](https://departuremono.com/) - A monospaced pixel font with a lo-fi, techy vibe.
+    - [Geist](https://vercel.com/font) - a typeface specifically designed for developers and designers.
