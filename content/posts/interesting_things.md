@@ -3,7 +3,7 @@ title: "List of Interesting Things"
 date: 2025-01-13
 draft: false
 ---
-> Last Modified: 24.03.2025 (German format, sorry)
+> Last Modified: 07.04.2025 (German format, sorry)
 
 ## Torrenting / Piracy / Archiving
 - [RedditToMarkDown](https://farnots.github.io/RedditToMarkdown/) - Save Reddit Threads as Markdown file
@@ -21,6 +21,9 @@ draft: false
 
 ## Misc
 - [4get](https://4get.ca/) - a proxy search engine that doesn't suck
+
+- [Spotube](https://github.com/KRTirtho/spotube) - open source Spotify client that doesn't require Premium nor uses Electron! Available for both desktop & mobile!
+    > btw, i've donated to that project! ❤️
 
 - Website themes with uBlock Origin
     >https://darekkay.com/blog/ublock-website-themes/
