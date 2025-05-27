@@ -5,12 +5,16 @@ draft: false
 ---
 > Last Modified: 07.04.2025 (German format, sorry)
 
-## Torrenting / Piracy / Archiving
+## Archiving
 - [RedditToMarkDown](https://farnots.github.io/RedditToMarkdown/) - Save Reddit Threads as Markdown file
     > Before weird Mods remove them or Reddit pulls weird moves again
 
 - [Pandoc](https://github.com/jgm/pandoc) - Convert format between different markup languages (Ex: HTML<->MD)
 
+## Privacy
+- [JustDeleteMe](https://justdeleteme.xyz/) - Provides links and info on how to delete accounts on different services
+
+## Torrenting / Piracy
 - A curated list of (not only) German piracy sites
     >https://github.com/SeppPenner/awesome-german-piracy
 
