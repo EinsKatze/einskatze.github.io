@@ -3,7 +3,7 @@ title: "List of Interesting Things"
 date: 2025-01-13
 draft: false
 ---
-> Last Modified: 15.04.2025 (German format, sorry)
+> Last Modified: 15.07.2025 (German format, sorry)
 
 ## Archiving
 - [RedditToMarkDown](https://farnots.github.io/RedditToMarkdown/) - Save Reddit Threads as Markdown file
