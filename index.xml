@@ -4,7 +4,7 @@
     <title>EinsKatze</title>
     <link>https://einskatze.github.io/</link>
     <description>Recent content on EinsKatze</description>
-    <generator>Hugo -- 0.145.0</generator>
+    <generator>Hugo -- 0.148.1</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -47,8 +47,8 @@ His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
       <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/posts/interesting_things/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Last Modified: 07.04.2025 (German format, sorry)&lt;/p&gt;&lt;/blockquote&gt;
-&lt;h2 id=&#34;torrenting--piracy--archiving&#34;&gt;Torrenting / Piracy / Archiving&lt;/h2&gt;
+&lt;p&gt;Last Modified: 15.07.2025 (German format, sorry)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;h2 id=&#34;archiving&#34;&gt;Archiving&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://farnots.github.io/RedditToMarkdown/&#34;&gt;RedditToMarkDown&lt;/a&gt; - Save Reddit Threads as Markdown file&lt;/p&gt;
@@ -58,6 +58,13 @@ His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/jgm/pandoc&#34;&gt;Pandoc&lt;/a&gt; - Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p&gt;
 &lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;privacy&#34;&gt;Privacy&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://justdeleteme.xyz/&#34;&gt;JustDeleteMe&lt;/a&gt; - Provides links and info on how to delete accounts on different services&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;torrenting--piracy&#34;&gt;Torrenting / Piracy&lt;/h2&gt;
+&lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;A curated list of (not only) German piracy sites&lt;/p&gt;
 &lt;blockquote&gt;
@@ -74,7 +81,7 @@ His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
 &lt;h2 id=&#34;misc&#34;&gt;Misc&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;a href=&#34;https://4get.ca/&#34;&gt;4get&lt;/a&gt; - a proxy search engine that doesn&amp;rsquo;t suck&lt;/p&gt;</description>
+&lt;p&gt;&lt;a href=&#34;https://excalidraw.com&#34;&gt;Excalidraw&lt;/a&gt; - Virtual whiteboard for sketching hand-drawn like diagrams&lt;/p&gt;</description>
     </item>
     <item>
       <title>Do a quick system scan with ClamAV</title>
