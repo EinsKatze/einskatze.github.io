@@ -4,7 +4,7 @@
     <title>EinsKatze</title>
     <link>https://einskatze.github.io/de/</link>
     <description>Recent content on EinsKatze</description>
-    <generator>Hugo -- 0.148.1</generator>
+    <generator>Hugo -- 0.150.0</generator>
     <language>de</language>
     <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://einskatze.github.io/de/index.xml" rel="self" type="application/rss+xml" />
@@ -31,9 +31,9 @@ Hinweis: Dies ist die Standard-Version von Windows 10 Enterprise LTSC (ohne IoT)
       <link>https://einskatze.github.io/de/about/</link>
       <pubDate>Mon, 03 Mar 2025 16:00:00 +0100</pubDate>
       <guid>https://einskatze.github.io/de/about/</guid>
-      <description>&lt;p&gt;My name is EinsKatze, also known as Pascal, and last year I finished an apprenticeship as an IT specialist for system integration.&lt;/p&gt;
-&lt;p&gt;Im into linux &amp;amp; privacy and self-hosting stuff, but overall i really like all kinds of tech.&lt;/p&gt;
-&lt;p&gt;As you may have already noticed from the favicon or my &lt;a href=&#34;https://einskatze.github.io/de/contact/&#34;&gt;profiles&lt;/a&gt; such as discord or github, i really like cats.&lt;/p&gt;
+      <description>&lt;p&gt;Mein Name ist EinsKatze, auch bekannt als Pascal, und letztes Jahr habe ich eine Ausbildung zum Fachinformatiker für Systemintegration abgeschlossen.&lt;/p&gt;
+&lt;p&gt;Ich interessiere mich für Linux, Datenschutz und Selbsthosting, aber insgesamt mag ich eigentlich alle Arten von Technik.&lt;/p&gt;
+&lt;p&gt;Wie Sie vielleicht schon anhand des Favicons oder meiner &lt;a href=&#34;https://einskatze.github.io/de/contact/&#34;&gt;Profile&lt;/a&gt; wie Discord oder GitHub bemerkt haben, mag ich Katzen sehr gerne.&lt;/p&gt;
 &lt;p&gt;Keep an eye out for future updates to this page.&lt;/p&gt;</description>
     </item>
     <item>
@@ -41,7 +41,7 @@ Hinweis: Dies ist die Standard-Version von Windows 10 Enterprise LTSC (ohne IoT)
       <link>https://einskatze.github.io/de/gpg/</link>
       <pubDate>Thu, 11 May 2023 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/de/gpg/</guid>
-      <description>&lt;p&gt;This Public Key uses a fake mail. For ways to contact me look at &lt;a href=&#34;https://einskatze.github.io/de/contact/&#34;&gt;this&lt;/a&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Dieser öffentliche Schlüssel verwendet eine E-Mail-Adresse, die ich nicht nutze und nicht besitze. Ich habe sie nur verwendet, um meine tatsächlich genutzte E-Mail-Adresse nicht öffentlich preisgeben zu müssen. Kontaktmöglichkeiten finden Sie &lt;a href=&#34;https://einskatze.github.io/de/contact/&#34;&gt;hier&lt;/a&gt;.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;-----BEGIN PGP PUBLIC KEY BLOCK-----
 
 mQINBGQ+pG0BEADIjC7teL7HXt2h7GyOWOV6mnMNzrEf2MtpAAo1pgePlAMEM4K9
@@ -101,10 +101,10 @@ Q5wSaJdLDD2HlwkJd1c=
       <link>https://einskatze.github.io/de/contact/</link>
       <pubDate>Tue, 07 Mar 2023 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/de/contact/</guid>
-      <description>&lt;p&gt;Platforms, with a hyperlink to their website, are open source &amp;amp; end-to-end encrypted.&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://einskatze.github.io/de/gpg/&#34;&gt;My Public GPG Key&lt;/a&gt;&lt;/p&gt;
+      <description>&lt;p&gt;Die Plattformen mit einem Hyperlink zu ihrer Website sind Open Source und ende-zu-ende verschlüsselt.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://einskatze.github.io/de/gpg/&#34;&gt;Mein öffentlicher GPG Key&lt;/a&gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;p&gt;Platforms:&lt;/p&gt;
+&lt;p&gt;Dienste:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://getsession.org/&#34;&gt;Session&lt;/a&gt;: 05c25a389698503b2a294754b21561badc9491c9dcb2c4dd7fd7035cbf3c6fa047&lt;/p&gt;
@@ -113,11 +113,11 @@ Q5wSaJdLDD2HlwkJd1c=
 &lt;p&gt;&lt;a href=&#34;https://matrix.org&#34;&gt;Matrix&lt;/a&gt;: &lt;a href=&#34;https://matrix.to/#/@einskatze:matrix.org&#34;&gt;https://matrix.to/#/@einskatze:matrix.org&lt;/a&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Discord: einskatze1337 (Old Account (einskadse) has been suspended)&lt;/p&gt;
+&lt;p&gt;Discord: einskatze1337&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;hr&gt;
-&lt;h5 id=&#34;last-update-4th-september-2024&#34;&gt;Last Update: 4th September 2024&lt;/h5&gt;</description>
+&lt;h5 id=&#34;last-update-15th-september-2025&#34;&gt;Last Update: 15th September 2025&lt;/h5&gt;</description>
     </item>
   </channel>
 </rss>
