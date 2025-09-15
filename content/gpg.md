@@ -3,7 +3,7 @@ title: "My Public GPG Key"
 date: 2023-05-11
 draft: false
 ---
-This Public Key uses a fake mail. For ways to contact me look at [this](../contact).
+This Public Key uses a mail i do not use or own, i just used it so i don't have to publicly share a mail i use. For ways to contact me look at [this](../contact).
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----

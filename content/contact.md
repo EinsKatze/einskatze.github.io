@@ -14,7 +14,7 @@ Platforms:
 
 2. [Matrix](https://matrix.org): https://matrix.to/#/@einskatze:matrix.org
 
-3. Discord: einskatze1337 (Old Account (einskadse) has been suspended)
+3. Discord: einskatze1337
 ***
 
-##### Last Update: 4th September 2024
+##### Last Update: 15th September 2025

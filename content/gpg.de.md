@@ -3,7 +3,7 @@ title: "My Public GPG Key"
 date: 2023-05-11
 draft: false
 ---
-This Public Key uses a fake mail. For ways to contact me look at [this](../contact).
+Dieser öffentliche Schlüssel verwendet eine E-Mail-Adresse, die ich nicht nutze und nicht besitze. Ich habe sie nur verwendet, um meine tatsächlich genutzte E-Mail-Adresse nicht öffentlich preisgeben zu müssen. Kontaktmöglichkeiten finden Sie [hier](../contact).
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
