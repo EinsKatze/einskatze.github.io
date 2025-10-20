@@ -4,7 +4,7 @@
     <title>EinsKatze</title>
     <link>https://einskatze.github.io/</link>
     <description>Recent content on EinsKatze</description>
-    <generator>Hugo -- 0.150.0</generator>
+    <generator>Hugo -- 0.151.2</generator>
     <language>en</language>
     <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml" />
@@ -16,12 +16,14 @@
       <description>&lt;blockquote&gt;
 &lt;p&gt;EinsKatze:&lt;br&gt;
 Hi everyone, this basically is a guest-post. This guide is entirely written by TimLew, shoutout to him! 💖
-His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
+His Discord Username: timlew&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;step-1-download-the-iso-file&#34;&gt;Step 1: Download the ISO File&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Download Link&lt;/strong&gt;:
 &lt;a href=&#34;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&#34;&gt;https://drive.massgrave.dev/de-de_windows_10_enterprise_ltsc_2021_x64_dvd_71796d33.iso&lt;/a&gt;&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This is the standard Windows 10 Enterprise LTSC ISO (non-IoT), but it retains your system language as German.&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: This is the standard Windows 10 Enterprise LTSC ISO (non-IoT), but it retains your system language as German.&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&#34;step-2-verify-system-language&#34;&gt;Step 2: Verify System Language&lt;/h2&gt;
 &lt;ol&gt;
@@ -47,13 +49,15 @@ His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
       <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/posts/interesting_things/</guid>
       <description>&lt;blockquote&gt;
-&lt;p&gt;Last Modified: 15.07.2025 (German format, sorry)&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Last Modified: 20.10.2025 (German format, sorry)&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;h2 id=&#34;archiving&#34;&gt;Archiving&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://farnots.github.io/RedditToMarkdown/&#34;&gt;RedditToMarkDown&lt;/a&gt; - Save Reddit Threads as Markdown file&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;Before weird Mods remove them or Reddit pulls weird moves again&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;Before weird Mods remove them or Reddit pulls weird moves again&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/jgm/pandoc&#34;&gt;Pandoc&lt;/a&gt; - Convert format between different markup languages (Ex: HTML&amp;lt;-&amp;gt;MD)&lt;/p&gt;
@@ -68,7 +72,8 @@ His Discord Username: timlew&lt;/p&gt;&lt;/blockquote&gt;
 &lt;li&gt;
 &lt;p&gt;A curated list of (not only) German piracy sites&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/SeppPenner/awesome-german-piracy&#34;&gt;https://github.com/SeppPenner/awesome-german-piracy&lt;/a&gt;&lt;/p&gt;&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/SeppPenner/awesome-german-piracy&#34;&gt;https://github.com/SeppPenner/awesome-german-piracy&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;/li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/milahu/deutschetorrents&#34;&gt;German Torrents&lt;/a&gt;&lt;/p&gt;
