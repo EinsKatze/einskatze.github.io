@@ -1,7 +1,7 @@
 ---
 title: "Making a Mac Timemachine Backup on a SMB share"
 date: 2026-01-07
-draft: false
+draft: true
 ---
 
 Hi everyone, welcome to my first post this year. I wish you a happy new year!
