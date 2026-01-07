@@ -1,7 +1,7 @@
 ---
 title: "Making a Mac Timemachine Backup on a SMB share"
 date: 2026-01-07
-draft: true
+draft: false
 ---
 
 Hi everyone, welcome to my first post this year. I wish you a happy new year!
@@ -10,22 +10,26 @@ Hi everyone, welcome to my first post this year. I wish you a happy new year!
 There are two ways to create this virtual disk - via commands in the terminal or via the Disk Utility App (GUI)
 
 ### Terminal way
-
 Go into the folder where u want to create the virtual disk (NOT THE SMB SHARE, this step comes later)
-In my case its the Desktop
-`cd Desktop`
+In this case im using my Desktop
 
-With the following command we now create the virtual disk image, i chose 500GB for this.
-`hdiutil create -size 500g -type SPARSEBUNDLE -fs "HFS+J" TimeMachine.sparsebundle`
+```bash
+cd Desktop
+```
 
-This will create a 500 GB image named "TimeMachine" – change the size to suit your needs (roughly twice the size of your Mac's storage space is recommended)
+With the following command we are going to create a 500GB virtual disk image named "TimeMachine" – change the size to suit your needs (roughly twice the size of your Mac's storage space is recommended)
+
+```bash 
+hdiutil create -size 500g -type SPARSEBUNDLE -fs "HFS+J" TimeMachine.sparsebundle
+```
 
 ### GUI way
 
 Open the Disk Utility App
 
-Now click "New Image" in the Toolbar or press `CMD + N`
-<<IMAGE>>
+Now click "New Image" in the Toolbar or press `⌘ + N`
+
+![image](du_new_image.png)
 
 First set Image Format as "sparse button disk image", then set the size you want (setting the size first will probably result in an error message). Give the disk a name (I use TimeMachine in this tutorial), then optionally enable encryption. Save the disk to your desktop.
 
