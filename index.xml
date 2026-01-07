@@ -6,8 +6,20 @@
     <description>Recent content on EinsKatze</description>
     <generator>Hugo -- 0.154.3</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 17 Mar 2025 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Making a Mac Timemachine Backup on a SMB share</title>
+      <link>https://einskatze.github.io/posts/mac_tm_backup/</link>
+      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <guid>https://einskatze.github.io/posts/mac_tm_backup/</guid>
+      <description>&lt;p&gt;Hi everyone, welcome to my first post this year. I wish you a happy new year!&lt;/p&gt;
+&lt;h1 id=&#34;create-sparse-image-virtual-disk&#34;&gt;Create sparse image (virtual disk)&lt;/h1&gt;
+&lt;p&gt;There are two ways to create this virtual disk - via commands in the terminal or via the Disk Utility App (GUI)&lt;/p&gt;
+&lt;h3 id=&#34;terminal-way&#34;&gt;Terminal way&lt;/h3&gt;
+&lt;p&gt;Go into the folder where u want to create the virtual disk (NOT THE SMB SHARE, this step comes later)
+In this case im using my Desktop&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title>
       <link>https://einskatze.github.io/posts/win10_iot_upgrade/</link>
