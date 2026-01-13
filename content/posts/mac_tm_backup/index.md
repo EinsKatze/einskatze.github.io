@@ -31,7 +31,12 @@ Now click "New Image" in the Toolbar or press `⌘ + N`
 
 ![image](du_new_image.png)
 
-First set Image Format as "sparse button disk image", then set the size you want (setting the size first will probably result in an error message). Give the disk a name (I use TimeMachine in this tutorial), then optionally enable encryption. Save the disk to your desktop.
+1. Set Image Format to "sparse bundle disk image"
+2. Set the size you want (setting the size first will probably result in an error message). 
+3. Give the disk a name (I use TimeMachine in this tutorial), optionally enable encryption. 
+4. Save the disk to your desktop.
+
+![image](du_image_settings.png)
 
 # 2. Copy the image file to your network share
 Head to Finder, and open the network folder you'd like to use for your backup. Drag the sparse image you just created to this folder.
