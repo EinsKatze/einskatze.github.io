@@ -6,12 +6,12 @@
     <description>Recent content on EinsKatze</description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 07 Jan 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 00:00:00 +0000</lastBuildDate>
     <atom:link href="https://einskatze.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Making a Mac Time Machine Backup on an SMB Share</title>
       <link>https://einskatze.github.io/posts/mac_tm_backup/</link>
-      <pubDate>Wed, 07 Jan 2026 00:00:00 +0000</pubDate>
+      <pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/posts/mac_tm_backup/</guid>
       <description>&lt;p&gt;Hi everyone, welcome to my first post this year.&lt;/p&gt;
 &lt;h1 id=&#34;create-sparse-image-virtual-disk&#34;&gt;Create sparse image (virtual disk)&lt;/h1&gt;
@@ -95,7 +95,7 @@ His Discord Username: timlew&lt;/p&gt;
       <link>https://einskatze.github.io/posts/clamav_quickscan/</link>
       <pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate>
       <guid>https://einskatze.github.io/posts/clamav_quickscan/</guid>
-      <description>&lt;p&gt;Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)&lt;/p&gt;
+      <description>&lt;p&gt;Hey everyone! This is a short guide on how to download the portable version of ClamAV for Windows and run a quick scan on your system.&lt;/p&gt;
 &lt;h2 id=&#34;download-clamav-no-install&#34;&gt;Download ClamAV (no install)&lt;/h2&gt;
 &lt;p&gt;First go to the &lt;a href=&#34;https://github.com/Cisco-Talos/clamav/releases&#34;&gt;GitHub Repository of ClamAV&lt;/a&gt; and download the latest release.
 Extract the contents of the zip file.&lt;/p&gt;
