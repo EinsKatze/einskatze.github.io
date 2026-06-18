@@ -4,7 +4,7 @@ date: 2024-07-28
 draft: false
 ---
 
-Hey everyone, this is a short blog post about how to download ClamAV and run a scan on your system. (Windows)
+Hey everyone! This is a short guide on how to download the portable version of ClamAV for Windows and run a quick scan on your system.
 
 ## Download ClamAV (no install)
 

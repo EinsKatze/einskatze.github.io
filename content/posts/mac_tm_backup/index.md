@@ -1,6 +1,6 @@
 ---
 title: "Making a Mac Time Machine Backup on an SMB Share"
-date: 2026-01-07
+date: 2026-06-18
 draft: false
 ---
 
