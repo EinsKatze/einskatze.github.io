@@ -27,7 +27,7 @@ A curated collection of interesting tools, services, guides, and resources that 
 - [IT-Tools](https://it-tools.tech/) - Handy collection of web-based developer and sysadmin utilities ([GitHub](https://github.com/CorentinTh/it-tools)).
 - [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) - Powerful, locally hosted web application for PDF manipulation (merge, split, convert, OCR).
 
-## Torrenting & Archival
+## Torrenting
 - [awesome-german-piracy](https://github.com/SeppPenner/awesome-german-piracy) - A curated list of (not only) German indexing and sharing sites.
 - [German Torrents](https://github.com/milahu/deutschetorrents) - Overview of German torrent trackers and indexing sites.
 
