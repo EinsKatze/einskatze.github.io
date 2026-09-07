@@ -6,24 +6,36 @@ draft: false
 
 Hey everyone! This is a short guide on how to download the portable version of ClamAV for Windows and run a quick scan on your system.
 
-## Download ClamAV (no install)
+<!--more-->
 
-First go to the [GitHub Repository of ClamAV](https://github.com/Cisco-Talos/clamav/releases) and download the latest release.
-Extract the contents of the zip file.
+## 1. Download ClamAV (Portable / No Install)
 
-## Downloading the ClamAV Databases
+First, visit the [ClamAV GitHub Releases](https://github.com/Cisco-Talos/clamav/releases) page and download the latest Windows `.zip` release. Extract the contents of the ZIP archive to a folder of your choice.
 
-You need to create a config for freshclam.exe, you can just copy the example from the conf_examples folder and remove the "Example" line and change the folder for the database.
+## 2. Download the ClamAV Databases
 
-Now open up a terminal and navigate to the ClamAV folder and execute freshclam.exe. You will see that it downloads some files. After a few minutes it should be done.
+Before scanning, you need to configure `freshclam.exe` to download signature databases:
 
-## Scanning your whole System
+1. Navigate to the `conf_examples` folder.
+2. Copy the example configuration file (`freshclam.conf.sample`) into the main ClamAV directory and rename it to `freshclam.conf`.
+3. Open `freshclam.conf` in a text editor, remove or comment out the line that says `Example`, and configure the database directory path if desired.
 
-In the same terminal, run clamscan.exe with the recursive scanning parameter and the folder to scan.
+Now open a terminal (Command Prompt or PowerShell), navigate to your ClamAV directory, and run:
 
-So for a full system scan this would be:
-`clamscan.exe --recursive C:\`
+```cmd
+freshclam.exe
+```
+
+It will begin downloading the latest virus definition databases. After a few minutes, the update will finish.
+
+## 3. Scan Your Entire System
+
+In the same terminal, run `clamscan.exe` with the recursive scanning flag and the target drive or folder:
+
+```cmd
+clamscan.exe --recursive C:\
+```
 
 ## More Information
 
-For more information have a look at the [ClamAV docs](https://docs.clamav.net/) yourself
+For more information and advanced scanning options, take a look at the official [ClamAV documentation](https://docs.clamav.net/).

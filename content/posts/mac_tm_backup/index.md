@@ -2,61 +2,67 @@
 title: "Making a Mac Time Machine Backup on an SMB Share"
 date: 2026-06-18
 draft: false
+showtoc: true
 ---
 
-Hi everyone, welcome to my first post this year. 
+A step-by-step guide on how to configure Apple Time Machine to back up over an SMB network share using a sparse bundle virtual disk image.
 
-# Create sparse image (virtual disk)
-There are two ways to create this virtual disk - via commands in the terminal or via the Disk Utility App (GUI)
+<!--more-->
 
-### Terminal way
-Go into the folder where you want to create the virtual disk (NOT THE SMB SHARE, this step comes later).
-In this case, I'm using my Desktop:
+## 1. Create a Sparse Image (Virtual Disk)
+
+There are two ways to create this virtual disk: via commands in the terminal, or using macOS Disk Utility.
+
+### Option A: Using the Terminal
+
+Navigate to the directory where you want to create the initial virtual disk (work locally first, not directly on the SMB share):
 
 ```bash
-cd Desktop
+cd ~/Desktop
 ```
 
-With the following command, we are going to create a 500GB virtual disk image named "TimeMachine" – change the size to suit your needs (roughly twice the size of your Mac's storage space is recommended):
+Run the following command to create a 500GB virtual disk image named `TimeMachine`. Adjust the size to suit your needs (roughly 1.5x to 2x your Mac's storage capacity is recommended):
 
-```bash 
+```bash
 hdiutil create -size 500g -type SPARSEBUNDLE -fs "HFS+J" TimeMachine.sparsebundle
 ```
 
-### GUI way
+### Option B: Using Disk Utility (GUI)
 
-Open the Disk Utility App
+1. Open **Disk Utility**.
+2. Click **File > New Image > Blank Image...** in the menu bar, or press `⌘ + N`.
 
-Now click "New Image" in the Toolbar or press `⌘ + N`
+![Create New Image in Disk Utility](du_new_image.png)
 
-![image](du_new_image.png)
+3. Set **Image Format** to "sparse bundle disk image".
+4. Set the desired maximum size (select the format first to prevent size reset errors).
+5. Name the disk (e.g., `TimeMachine`) and optionally enable encryption.
+6. Set the save location to your Desktop and click **Save**.
 
-1. Set Image Format to "sparse bundle disk image"
-2. Set the size you want (setting the size first will probably result in an error message). 
-3. Give the disk a name (I use TimeMachine in this tutorial), optionally enable encryption. 
-4. Save the disk to your desktop.
+![Disk Utility image settings](du_image_settings.png)
 
-![image](du_image_settings.png)
+## 2. Copy the Image File to Your Network Share
 
-# 2. Copy the image file to your network share
-Head to Finder, and open the network folder you'd like to use for your backup. Drag the sparse image you just created to this folder.
+Open Finder and navigate to the network SMB share you want to use for backups. Drag the `TimeMachine.sparsebundle` file you just created into this folder.
 
-Once everything has copied you can then delete the remaining image on your desktop. Now, double-click the copy of the image on your network share – this will mount it. If everything worked, you should see the new TimeMachine drive in your Finder's sidebar and on your desktop (depending on your settings).
+Once the copy has finished completely, you can delete the local copy from your Desktop. Now double-click the sparse bundle on your network share to mount it. You should see the mounted `TimeMachine` volume appear in Finder's sidebar.
 
-# 3. Add Image as Destination for Time Machine
-For whatever reason, the GUI doesn't recognize the mounted image as a valid path; therefore, we need to add it as a Time Machine Destination via the terminal.
+## 3. Add the Image as a Destination for Time Machine
+
+Because the macOS Time Machine settings UI typically does not allow directly selecting mounted network sparse bundles, register it as a destination via the terminal:
 
 ```bash
 sudo tmutil setdestination /Volumes/TimeMachine
 ```
 
-If you've named your image something else, you need to adjust the command accordingly.
+*(If you chose a different volume name, adjust `/Volumes/TimeMachine` accordingly.)*
 
-# 4. Mount the Image Automatically on Login
-Since macOS won't automatically mount your sparse bundle from a network share after a reboot, you can use a simple AppleScript to handle this for you.
+## 4. Mount the Image Automatically on Login
 
-1. Open **Script Editor** (found in /Applications/Utilities).
-2. Paste the following script, replacing the placeholders with your actual network share path and image name:
+Since macOS does not automatically remount network sparse bundles after a reboot, a small AppleScript app handles mounting on startup:
+
+1. Open **Script Editor** (located in `/Applications/Utilities`).
+2. Paste the following script, replacing the share path and image name with your actual values:
 
 ```applescript
 tell application "Finder"
@@ -68,7 +74,7 @@ tell application "Finder"
 end tell
 ```
 
-3. Save the script as an **Application** (e.g., `MountTimeMachine`).
+3. Save the script as an **Application** (e.g. `MountTimeMachine.app`).
 4. Go to **System Settings > General > Login Items** (or *System Preferences > Users & Groups > Login Items*) and add your new application to the list.
 
-Now, every time you log in, your Mac will automatically mount the backup image, and Time Machine will be able to perform its backups without manual intervention.
+Now every time you log in, your Mac will automatically mount the backup image, allowing Time Machine to run without manual intervention.

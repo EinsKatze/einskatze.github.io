@@ -1,9 +1,9 @@
 ---
-title: "My Public GPG Key"
+title: "Mein öffentlicher GPG-Schlüssel"
 date: 2023-05-11
 draft: false
 ---
-Dieser öffentliche Schlüssel verwendet eine E-Mail-Adresse, die ich nicht nutze und nicht besitze. Ich habe sie nur verwendet, um meine tatsächlich genutzte E-Mail-Adresse nicht öffentlich preisgeben zu müssen. Kontaktmöglichkeiten finden Sie [hier](../contact).
+Dieser öffentliche Schlüssel verwendet eine E-Mail-Adresse, die ich nicht aktiv nutze oder besitze. Ich habe sie nur hinterlegt, um meine tatsächliche E-Mail-Adresse nicht öffentlich preisgeben zu müssen. Kontaktmöglichkeiten findest du auf meiner [Kontaktseite](/de/contact).
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----

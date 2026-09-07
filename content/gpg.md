@@ -3,7 +3,7 @@ title: "My Public GPG Key"
 date: 2023-05-11
 draft: false
 ---
-This Public Key uses a mail i do not use or own, i just used it so i don't have to publicly share a mail i use. For ways to contact me look at [this](../contact).
+This public key uses an email address that I do not actively monitor or own; it was configured so I don't have to publicly expose my personal email address. For ways to reach me, see my [contact page](/contact).
 
 ```
 -----BEGIN PGP PUBLIC KEY BLOCK-----
