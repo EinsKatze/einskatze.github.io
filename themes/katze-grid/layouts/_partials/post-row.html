@@ -1,0 +1,7 @@
+<article class="post-row">
+  <time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_long" .Date }}</time>
+  <div class="post-row-main"><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ if and (not .Site.Params.hideSummary) .Summary }}<p>{{ .Summary | plainify | htmlUnescape | truncate 180 }}</p>{{ end }}</div>
+  <div class="post-row-tags">{{ with .Params.tags }}{{ range first 2 . }}<a href="{{ (printf "/tags/%s/" (. | urlize)) | relLangURL }}">#{{ . }}</a>{{ end }}{{ end }}</div>
+  {{ if .Site.Params.ShowWordCount }}<span class="word-count">{{ .WordCount }} {{ i18n "wordsShort" }}</span>{{ end }}
+  {{ if .Site.Params.ShowReadingTime }}<span class="read-time">{{ .ReadingTime }} {{ i18n "minuteShort" }}</span>{{ end }}
+</article>

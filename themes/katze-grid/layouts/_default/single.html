@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="article-panel panel">
+  <div class="article-heading"><div class="panel-kicker">{{ .Section | upper }} <span>{{ time.Format ":date_long" .Date }}</span></div>
+  <h1>{{ .Title }}</h1>
+  {{ if not .Site.Params.hidemeta }}<div class="article-meta">
+    {{ with .Params.author }}<span>{{ . }}</span>{{ end }}
+    {{ if .Site.Params.ShowReadingTime }}<span>{{ .ReadingTime }} {{ i18n "minutesRead" }}</span>{{ end }}
+    {{ if .Site.Params.ShowWordCount }}<span>{{ .WordCount }} {{ i18n "words" }}</span>{{ end }}
+    {{ if .Site.Params.ShowBreadCrumbs }}{{ partial "breadcrumbs.html" . }}{{ end }}
+  </div>{{ end }}</div>
+  {{ if and (or .Params.showtoc .Site.Params.showtoc) .TableOfContents }}<details class="toc"{{ if .Site.Params.tocopen }} open{{ end }}><summary>{{ i18n "contents" }}</summary>{{ .TableOfContents }}</details>{{ end }}
+  <div class="prose">{{ .Content }}</div>
+  {{ if .Params.tags }}<div class="tag-list">{{ range .Params.tags }}<a href="{{ (printf "/tags/%s/" (. | urlize)) | relLangURL }}">#{{ . }}</a>{{ end }}</div>{{ end }}
+  {{ if .Site.Params.ShowShareButtons }}<div class="share-row"><span>{{ i18n "share" }}</span><a href="https://twitter.com/intent/tweet?text={{ .Title | urlquery }}&url={{ .Permalink | urlquery }}">X / Twitter</a><a href="https://www.reddit.com/submit?url={{ .Permalink | urlquery }}&title={{ .Title | urlquery }}">Reddit</a></div>{{ end }}
+</article>
+{{ if .Site.Params.ShowPostNavLinks }}<nav class="article-nav panel" aria-label="{{ i18n "postNavigation" }}">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><small>← {{ i18n "previous" }}</small><span>{{ .Title }}</span></a>{{ end }}{{ with .NextInSection }}<a href="{{ .RelPermalink }}"><small>{{ i18n "next" }} →</small><span>{{ .Title }}</span></a>{{ end }}</nav>{{ end }}
+{{ end }}

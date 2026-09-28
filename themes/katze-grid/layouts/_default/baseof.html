@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="{{ .Site.Language.Lang }}" dir="{{ .Site.Language.Direction | default "ltr" }}">
+  {{- partial "head.html" . }}
+  <body data-home-page="{{ .IsHome }}">
+    <div class="site-shell">
+      {{ partial "header.html" . }}
+      <main id="main" class="main-shell">
+        {{ block "main" . }}{{ end }}
+      </main>
+      {{ partial "footer.html" . }}
+      {{ if not .Site.Params.disableScrollToTop }}<button class="scroll-top" type="button" aria-label="{{ i18n "scrollTop" }}" hidden>↑</button>{{ end }}
+      {{ if or .Site.Params.ShowCodeCopyButtons (not .Site.Params.disableScrollToTop) }}{{ $siteJS := resources.Get "js/site.js" | minify | fingerprint }}<script defer src="{{ $siteJS.RelPermalink }}" integrity="{{ $siteJS.Data.Integrity }}" data-copy-enabled="{{ .Site.Params.ShowCodeCopyButtons }}" data-copy-label="{{ i18n "copy" }}" data-copied-label="{{ i18n "copied" }}" data-failed-label="{{ i18n "copyFailed" }}"></script>{{ end }}
+    </div>
+  </body>
+</html>

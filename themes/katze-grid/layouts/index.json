@@ -1,0 +1,6 @@
+{{- $pages := where .Site.RegularPages "Draft" false -}}
+{{- $out := slice -}}
+{{- range $pages -}}
+  {{- $out = $out | append (dict "title" .Title "permalink" .RelPermalink "summary" (.Summary | plainify | htmlUnescape) "content" (.Plain | htmlUnescape) "date" (.Date.Format "2006-01-02") "section" .Section) -}}
+{{- end -}}
+{{- $out | jsonify -}}

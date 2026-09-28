@@ -1,0 +1,9 @@
+name = "Katze Grid"
+license = "MIT"
+licenselink = "https://opensource.org/license/mit"
+description = "A compact dark technical blog theme with panel-based layouts."
+tags = ["blog", "dark", "minimal", "technical", "grid"]
+features = ["multilingual", "search", "table of contents", "taxonomy", "RSS", "JSON"]
+min_version = "0.158.0"
+
+

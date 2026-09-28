@@ -1,0 +1,11 @@
+{{ define "main" }}
+<section class="intro-panel panel">
+  <h1>{{ with .Site.Params.homeInfoParams.Title }}{{ . }}{{ else }}{{ .Site.Title }}{{ end }}</h1>
+  <p>{{ with .Site.Params.homeInfoParams.Content }}{{ . | markdownify }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
+  {{ with .Site.Params.socialIcons }}<div class="home-socials" aria-label="{{ i18n "socialLinks" }}">{{ range . }}<a class="social-icon" href="{{ .url }}" rel="me noopener" target="_blank" aria-label="{{ .name }}" title="{{ .name }}">{{ partial "social-icon.html" . }}</a>{{ end }}</div>{{ end }}
+</section>
+<section class="section-panel panel">
+  <div class="section-heading"><h2><span>//</span> {{ i18n "recentPosts" }}</h2><a href="{{ "posts/" | relLangURL }}">{{ i18n "allPosts" }} <b>↗</b></a></div>
+  <div class="post-list">{{ $pages := where .Site.RegularPages "Section" "posts" }}{{ range first 10 (sort $pages "Date" "desc") }}{{ partial "post-row.html" . }}{{ end }}</div>
+</section>
+{{ end }}

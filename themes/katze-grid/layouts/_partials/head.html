@@ -1,0 +1,32 @@
+{{- $title := .Title -}}
+{{- if not .IsHome }}{{ $title = printf "%s | %s" .Title .Site.Title }}{{ else }}{{ $title = .Site.Title }}{{ end -}}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="theme-color" content="#090b0d">
+  <title>{{ $title }}</title>
+  <meta name="description" content="{{ .Description | default .Summary | default .Site.Params.description | plainify | htmlEscape }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  {{ with .Params.noindex }}<meta name="robots" content="noindex,follow">{{ end }}
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:description" content="{{ .Description | default .Summary | default .Site.Params.description | plainify }}">
+  {{ $schemaType := "WebPage" }}{{ if .IsHome }}{{ $schemaType = "WebSite" }}{{ else if and .IsPage (eq .Section "posts") }}{{ $schemaType = "BlogPosting" }}{{ end }}
+  <meta property="og:type" content="{{ if eq $schemaType "BlogPosting" }}article{{ else }}website{{ end }}">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:site_name" content="{{ .Site.Title }}">
+  {{ with .Params.cover.image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
+  <meta name="twitter:card" content="{{ if .Params.cover.image }}summary_large_image{{ else }}summary{{ end }}">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Description | default .Summary | default .Site.Params.description | plainify }}">
+  {{ $schema := dict "@context" "https://schema.org" "@type" $schemaType "name" .Title "headline" .Title "description" (.Description | default .Summary | plainify) "url" .Permalink "inLanguage" .Site.Language.Lang }}
+  <script type="application/ld+json">{{ $schema | jsonify | safeJS }}</script>
+  {{ hugo.Generator }}
+  {{ with .OutputFormats.Get "RSS" }}<link rel="alternate" type="application/rss+xml" href="{{ .RelPermalink }}" title="{{ $.Site.Title }}">{{ end }}
+  {{ if .IsHome }}{{ with .OutputFormats.Get "JSON" }}<link rel="alternate" type="application/json" href="{{ .RelPermalink }}" title="{{ $.Site.Title }} search index">{{ end }}{{ end }}
+  {{ with .Translations }}{{ range . }}<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">{{ end }}{{ end }}
+  {{ with .Site.Params.assets.favicon }}<link rel="icon" href="{{ . }}">{{ end }}
+  {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
+  <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+  {{ if eq .Layout "search" }}{{ $searchJS := resources.Get "js/search.js" | minify | fingerprint }}<script defer src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}"></script>{{ end }}
+</head>

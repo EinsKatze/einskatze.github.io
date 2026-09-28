@@ -1,6 +1,6 @@
 baseurl = "https://einskatze.github.io"
 title = "EinsKatze"
-theme = "PaperMod"
+theme = "katze-grid"
 defaultContentLanguage = "en"
 locale = "en-US"
 
@@ -31,7 +31,7 @@ showtoc = false
 tocopen = false
 
 [languages.en]
-label = ":us:"
+  label = "English"
 weight = 1
 
   [[languages.en.menu.main]]
@@ -65,7 +65,7 @@ weight = 1
   weight = 50
 
 [languages.de]
-label = ":de:"
+label = "Deutsch"
 weight = 2
 
   [[languages.de.menu.main]]
