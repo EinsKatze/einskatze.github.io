@@ -10,11 +10,11 @@
     {{ $currentPage := . }}
     {{ range hugo.Sites }}
       {{ $targetLang := .Language.Lang }}{{ $target := .Home }}{{ $languageName := "English" }}{{ if eq $targetLang "de" }}{{ $languageName = "Deutsch" }}{{ end }}
-      {{ if eq $targetLang $currentPage.Site.Language.Lang }}{{ $target = $currentPage }}{{ else }}
+      {{ if ne $targetLang $currentPage.Site.Language.Lang }}
         {{ range $currentPage.AllTranslations }}{{ if eq .Language.Lang $targetLang }}{{ $target = . }}{{ end }}{{ end }}
+        <a class="language-link" href="{{ $target.RelPermalink }}" lang="{{ $targetLang }}" aria-label="Switch to {{ $languageName }}" title="Switch to {{ $languageName }}">{{ if eq $targetLang "de" }}🇩🇪{{ else }}🇺🇸{{ end }}</a>
       {{ end }}
-      <a class="language-link" href="{{ $target.RelPermalink }}" lang="{{ $targetLang }}" aria-label="{{ $languageName }}"{{ if eq $targetLang $currentPage.Site.Language.Lang }} aria-current="page"{{ end }}>{{ if eq $targetLang "de" }}🇩🇪{{ else }}🇺🇸{{ end }}</a>
     {{ end }}
-    <a class="icon-link" href="{{ "index.xml" | relLangURL }}" aria-label="RSS">RSS</a>
+    <a class="icon-link" href="{{ "index.xml" | relLangURL }}" aria-label="RSS" title="RSS"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="5" cy="19" r="2" fill="currentColor"/><path d="M4 11a9 9 0 0 1 9 9M4 4a16 16 0 0 1 16 16" fill="none" stroke="currentColor" stroke-width="2"/></svg></a>
   </div>
 </header>

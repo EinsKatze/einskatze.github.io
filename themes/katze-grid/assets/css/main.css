@@ -138,6 +138,21 @@ button,input {
   color: var(--green)
 }
 
+.topbar-tools .icon-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 29px;
+  height: 28px;
+  padding: 0
+}
+
+.topbar-tools .icon-link svg {
+  display: block;
+  width: 15px;
+  height: 15px
+}
+
 .main-shell {
   flex: 1;
   min-height: 0;
