@@ -28,5 +28,5 @@
   {{ with .Site.Params.assets.favicon }}<link rel="icon" href="{{ . }}">{{ end }}
   {{ $css := resources.Get "css/main.css" | minify | fingerprint }}
   <link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
-  {{ if eq .Layout "search" }}{{ $searchJS := resources.Get "js/search.js" | minify | fingerprint }}<script defer src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}"></script>{{ end }}
+  {{ if eq .Layout "search" }}{{ $fuseJS := resources.Get "js/fuse.basic.min.js" | fingerprint }}<script defer src="{{ $fuseJS.RelPermalink }}" integrity="{{ $fuseJS.Data.Integrity }}"></script>{{ $searchJS := resources.Get "js/search.js" | minify | fingerprint }}<script defer src="{{ $searchJS.RelPermalink }}" integrity="{{ $searchJS.Data.Integrity }}"></script>{{ end }}
 </head>

@@ -2,9 +2,10 @@
   const html=document.documentElement;
   const fitShortHomepage=()=>{
     if(document.body.dataset.homePage!=='true')return;
-    html.classList.toggle('home-no-scroll',html.scrollHeight-window.innerHeight<=24);
+    html.classList.toggle('home-no-scroll',html.scrollHeight<=window.innerHeight);
   };
   window.addEventListener('resize',fitShortHomepage);
+  window.addEventListener('load',fitShortHomepage,{once:true});
   fitShortHomepage();
   const topButton=document.querySelector('.scroll-top');
   if(topButton){

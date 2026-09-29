@@ -64,6 +64,9 @@ weight = 1
   url = "/search"
   weight = 50
 
+  [languages.en.params]
+  flag = "🇺🇸"
+
 [languages.de]
 label = "Deutsch"
 weight = 2
@@ -97,6 +100,9 @@ weight = 2
   name = "Suche"
   url = "/search"
   weight = 50
+
+  [languages.de.params]
+  flag = "🇩🇪"
 
   [languages.de.params.homeInfoParams]
   Title = "Moin 👋"
@@ -182,4 +188,4 @@ home = [ "HTML", "RSS", "JSON" ]
   threshold = 0.4
   minMatchCharLength = 0
   limit = 10
-  keys = [ "title", "permalink", "summary", "content" ]
+  keys = [ "title", "permalink", "summary", "content", "tags" ]

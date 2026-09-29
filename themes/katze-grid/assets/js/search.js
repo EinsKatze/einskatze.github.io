@@ -3,33 +3,54 @@
   const output = document.getElementById('search-results');
   if (!input || !output) return;
 
-  let pages = null;
+  let fuse = null;
+  let loadPromise = null;
+  let loadFailed = false;
+  let debounceTimer = null;
   const locale = document.documentElement.lang || 'en';
   const dateFormat = new Intl.DateTimeFormat(locale, { dateStyle: 'long' });
+  const configured = JSON.parse(output.dataset.fuseOptions || '{}') || {};
+  const options = Object.fromEntries(Object.entries(configured).map(([key, value]) => [key.toLowerCase(), value]));
+  const fuseOptions = {
+    isCaseSensitive: options.iscasesensitive ?? false,
+    shouldSort: options.shouldsort ?? true,
+    location: options.location ?? 0,
+    distance: options.distance ?? 1000,
+    threshold: options.threshold ?? 0.4,
+    minMatchCharLength: options.minmatchcharlength ?? 1,
+    keys: options.keys ?? ['title', 'permalink', 'summary', 'content', 'tags'],
+  };
+  const resultLimit = Number.isInteger(options.limit) ? options.limit : 20;
+
+  const makeMessage = (message) => {
+    const element = document.createElement('p');
+    element.className = 'empty-state';
+    element.textContent = message;
+    return element;
+  };
 
   const renderResults = () => {
-    const query = input.value.trim().toLocaleLowerCase(locale);
+    const query = input.value.trim();
+    if (loadFailed) {
+      output.replaceChildren(makeMessage(output.dataset.errorMessage || 'Search index unavailable.'));
+      return;
+    }
+    if (fuse === null) {
+      if (query) output.replaceChildren(makeMessage(output.dataset.loadingMessage || 'Loading search index...'));
+      return;
+    }
     output.replaceChildren();
-    if (!query || pages === null) return;
+    if (!query) return;
 
-    const terms = query.split(/\s+/);
-    const matches = pages
-      .map((page) => {
-        const searchable = `${page.title} ${page.summary} ${page.content}`.toLocaleLowerCase(locale);
-        return { page, matches: terms.filter((term) => searchable.includes(term)).length };
-      })
-      .filter((result) => result.matches === terms.length)
-      .slice(0, 20);
+    const searchOptions = resultLimit > 0 ? { limit: resultLimit } : undefined;
+    const matches = fuse.search(query, searchOptions);
 
     if (!matches.length) {
-      const empty = document.createElement('p');
-      empty.className = 'empty-state';
-      empty.textContent = locale.startsWith('de') ? 'Keine Treffer.' : 'No matching entries.';
-      output.append(empty);
+      output.append(makeMessage(output.dataset.emptyMessage || 'No matching entries.'));
       return;
     }
 
-    matches.forEach(({ page }) => {
+    matches.forEach(({ item: page }) => {
       const row = document.createElement('article');
       row.className = 'post-row';
       const date = document.createElement('time');
@@ -50,21 +71,30 @@
     });
   };
 
-  input.addEventListener('input', renderResults);
-  fetch(output.dataset.indexUrl)
-    .then((response) => {
-      if (!response.ok) throw new Error(`Search index request failed: ${response.status}`);
-      return response.json();
-    })
-    .then((index) => {
-      pages = index;
-      renderResults();
-    })
-    .catch(() => {
-      pages = [];
-      const error = document.createElement('p');
-      error.className = 'empty-state';
-      error.textContent = locale.startsWith('de') ? 'Suchindex nicht verfügbar.' : 'Search index unavailable.';
-      output.replaceChildren(error);
-    });
+  const loadIndex = () => {
+    if (loadPromise) return loadPromise;
+    output.replaceChildren(makeMessage(output.dataset.loadingMessage || 'Loading search index...'));
+    loadPromise = fetch(output.dataset.indexUrl)
+      .then((response) => {
+        if (!response.ok) throw new Error(`Search index request failed: ${response.status}`);
+        return response.json();
+      })
+      .then((index) => {
+        if (!window.Fuse) throw new Error('Fuse.js is unavailable.');
+        fuse = new window.Fuse(index, fuseOptions);
+        renderResults();
+      })
+      .catch(() => {
+        loadFailed = true;
+        renderResults();
+      });
+    return loadPromise;
+  };
+
+  input.addEventListener('focus', loadIndex, { once: true });
+  input.addEventListener('input', () => {
+    loadIndex();
+    window.clearTimeout(debounceTimer);
+    debounceTimer = window.setTimeout(renderResults, 150);
+  });
 })();

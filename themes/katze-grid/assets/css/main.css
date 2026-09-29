@@ -22,6 +22,7 @@
 
 html {
   min-width: 320px;
+  font-size: clamp(15px,calc(2.5vw - 4.5px),18px);
   background: var(--bg);
   scroll-behavior: smooth
 }
@@ -36,7 +37,7 @@ body {
   min-height: 100vh;
   margin: 0;
   color: var(--text);
-  font: 15px/1.65 var(--sans);
+  font: 1rem/1.65 var(--sans);
   background-color: var(--bg);
   background-attachment: fixed;
   background-image: none
@@ -71,28 +72,27 @@ button,input {
   z-index: 1;
   display: flex;
   flex-direction: column;
-  zoom: 1.2;
-  width: min(1000px,calc((100% - 36px)/1.2));
-  min-height: calc((100vh - 24px)/1.2);
-  margin: 20px auto 0
+  width: min(1200px,calc(100% - 36px));
+  min-height: calc(100vh - 1.3333rem);
+  margin: 1.3333rem auto 0
 }
 
 .topbar {
   display: flex;
   align-items: center;
-  gap: 18px;
-  min-height: 50px;
-  padding: 8px 12px;
-  border: 1px solid var(--line);
+  gap: 1.2rem;
+  min-height: 3.3333rem;
+  padding: 0.5333rem 0.8rem;
+  border: 0.0667rem solid var(--line);
   background: rgba(10,13,16,.96);
-  box-shadow: 0 8px 30px #0005
+  box-shadow: 0 0.5333rem 2rem #0005
 }
 
 .brand {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
-  font: 700 12px var(--mono);
+  gap: 0.5333rem;
+  font: 700 0.8rem var(--mono);
   letter-spacing: .035em;
   white-space: nowrap
 }
@@ -102,6 +102,8 @@ button,input {
 }
 
 .brand-icon {
+  width: 1.8rem;
+  height: 1.8rem;
   object-fit: contain
 }
 
@@ -109,15 +111,15 @@ button,input {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 4px;
+  gap: 0.2667rem;
   margin-left: auto
 }
 
 .primary-nav a,.topbar-tools a {
-  padding: 5px 9px;
+  padding: 0.3333rem 0.6rem;
   color: var(--muted);
-  font: 600 10px var(--mono);
-  border: 1px solid transparent;
+  font: 600 0.6667rem var(--mono);
+  border: 0.0667rem solid transparent;
   text-transform: uppercase;
   letter-spacing: .03em
 }
@@ -131,7 +133,7 @@ button,input {
 .topbar-tools {
   display: flex;
   align-items: center;
-  gap: 4px
+  gap: 0.2667rem
 }
 
 .topbar-tools .language-link {
@@ -142,40 +144,40 @@ button,input {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 29px;
-  height: 28px;
+  width: 1.9333rem;
+  height: 1.8667rem;
   padding: 0
 }
 
 .topbar-tools .icon-link svg {
   display: block;
-  width: 15px;
-  height: 15px
+  width: 1rem;
+  height: 1rem
 }
 
 .main-shell {
   flex: 1;
   min-height: 0;
-  padding: 9px 0 18px
+  padding: 0.6rem 0 1.2rem
 }
 
 .panel {
-  border: 1px solid var(--line);
+  border: 0.0667rem solid var(--line);
   background: rgba(12,15,18,.96);
-  box-shadow: 0 5px 18px #0002
+  box-shadow: 0 0.3333rem 1.2rem #0002
 }
 
 .intro-panel,.page-heading,.error-panel {
-  padding: 20px 22px;
-  margin-bottom: 9px
+  padding: 1.3333rem 1.4667rem;
+  margin-bottom: 0.6rem
 }
 
 .panel-kicker {
   display: flex;
-  gap: 12px;
+  gap: 0.8rem;
   align-items: center;
   color: var(--muted);
-  font: 600 10px var(--mono);
+  font: 600 0.6667rem var(--mono);
   letter-spacing: .08em;
   text-transform: uppercase
 }
@@ -186,34 +188,34 @@ button,input {
 }
 
 .intro-panel h1,.page-heading h1,.error-panel h1 {
-  margin: 11px 0 3px;
-  font-size: clamp(25px,4vw,34px);
+  margin: 0.7333rem 0 0.2rem;
+  font-size: clamp(1.6667rem,4vw,2.2667rem);
   line-height: 1.2;
   letter-spacing: -.045em
 }
 
 .intro-panel>p,.page-heading>p,.error-panel>p {
-  margin: 7px 0 0;
+  margin: 0.4667rem 0 0;
   color: #aab2b9;
-  font-size: 14px
+  font-size: 0.9333rem
 }
 
 .section-panel {
-  margin-bottom: 9px;
-  padding: 0 13px
+  margin-bottom: 0.6rem;
+  padding: 0 0.8667rem
 }
 
 .section-heading {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 46px;
-  border-bottom: 1px solid var(--line)
+  min-height: 3.0667rem;
+  border-bottom: 0.0667rem solid var(--line)
 }
 
 .section-heading h2 {
   margin: 0;
-  font: 700 11px var(--mono);
+  font: 700 0.7333rem var(--mono);
   text-transform: uppercase;
   letter-spacing: .035em
 }
@@ -224,7 +226,7 @@ button,input {
 
 .section-heading>a {
   color: var(--muted);
-  font: 10px var(--mono);
+  font: 0.6667rem var(--mono);
   text-transform: uppercase
 }
 
@@ -238,11 +240,11 @@ button,input {
 
 .post-row {
   display: grid;
-  grid-template-columns: 120px minmax(0,1fr) minmax(90px,170px) 68px 44px;
+  grid-template-columns: 8rem minmax(0,1fr) minmax(6rem,11.3333rem) 4.5333rem 2.9333rem;
   align-items: center;
-  gap: 12px;
-  padding: 13px 3px;
-  border-bottom: 1px solid #1c2126
+  gap: 0.8rem;
+  padding: 0.8667rem 0.2rem;
+  border-bottom: 0.0667rem solid #1c2126
 }
 
 .post-row:last-child {
@@ -251,13 +253,13 @@ button,input {
 
 .post-row time,.read-time {
   color: var(--faint);
-  font: 10px var(--mono);
+  font: 0.6667rem var(--mono);
   white-space: nowrap
 }
 
 .word-count {
   color: var(--faint);
-  font: 10px/1 var(--mono);
+  font: 0.6667rem/1 var(--mono);
   letter-spacing: .02em;
   text-align: right;
   text-transform: uppercase;
@@ -270,7 +272,7 @@ button,input {
 
 .post-row h3 {
   margin: 0;
-  font-size: 14px;
+  font-size: 0.9333rem;
   font-weight: 650;
   line-height: 1.35
 }
@@ -281,9 +283,9 @@ button,input {
 
 .post-row p {
   overflow: hidden;
-  margin: 4px 0 0;
+  margin: 0.2667rem 0 0;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 1.45;
   text-overflow: ellipsis;
   white-space: nowrap
@@ -291,13 +293,13 @@ button,input {
 
 .post-row-tags,.tag-list {
   display: flex;
-  gap: 6px;
+  gap: 0.4rem;
   flex-wrap: wrap
 }
 
 .post-row-tags a,.tag-list a {
   color: #7e9d89;
-  font: 10px var(--mono)
+  font: 0.6667rem var(--mono)
 }
 
 .read-time {
@@ -305,27 +307,27 @@ button,input {
 }
 
 .page-heading .section-content {
-  margin-top: 10px;
-  padding-top: 10px;
-  border-top: 1px solid var(--line)
+  margin-top: 0.6667rem;
+  padding-top: 0.6667rem;
+  border-top: 0.0667rem solid var(--line)
 }
 
 .article-panel {
-  padding: 22px clamp(17px,4vw,42px);
+  padding: 1.4667rem clamp(1.1333rem,4vw,2.8rem);
 }
 
 .article-meta {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
-  gap: 12px;
+  gap: 0.8rem;
   color: var(--muted);
-  font: 10px var(--mono)
+  font: 0.6667rem var(--mono)
 }
 
 .breadcrumbs {
   display: inline-flex;
-  gap: 7px
+  gap: 0.4667rem
 }
 
 .breadcrumbs span {
@@ -333,28 +335,28 @@ button,input {
 }
 
 .toc {
-  margin: 20px 0;
-  padding: 11px 13px;
-  border: 1px solid var(--line);
+  margin: 1.3333rem 0;
+  padding: 0.7333rem 0.8667rem;
+  border: 0.0667rem solid var(--line);
   background: #0a0d0f
 }
 
 .toc summary {
   cursor: pointer;
   color: var(--green);
-  font: 600 11px var(--mono);
+  font: 600 0.7333rem var(--mono);
   text-transform: uppercase
 }
 
 .toc ul {
-  margin: 10px 0 0;
-  padding-left: 20px;
-  font-size: 12px
+  margin: 0.6667rem 0 0;
+  padding-left: 1.3333rem;
+  font-size: 0.8rem
 }
 
 .prose {
-  max-width: 790px;
-  margin: 25px auto 0;
+  max-width: 52.6667rem;
+  margin: 1.6667rem auto 0;
   color: #c4cbd0;
   overflow-wrap: anywhere
 }
@@ -387,25 +389,25 @@ button,input {
   color: #54d98c;
   text-decoration: underline;
   text-decoration-color: #23663e;
-  text-underline-offset: 3px
+  text-underline-offset: 0.2rem
 }
 
 .prose img {
   max-width: 100%;
   height: auto;
-  border: 1px solid var(--line)
+  border: 0.0667rem solid var(--line)
 }
 
 .prose blockquote {
   margin: 1.2em 0;
-  padding: 8px 14px;
-  border-left: 2px solid var(--green);
+  padding: 0.5333rem 0.9333rem;
+  border-left: 0.1333rem solid var(--green);
   background: #0b1110;
   color: #aab5ae
 }
 
 .prose hr {
-  height: 1px;
+  height: 0.0667rem;
   border: 0;
   background: var(--line)
 }
@@ -417,20 +419,20 @@ button,input {
 }
 
 .prose th,.prose td {
-  padding: 8px;
-  border: 1px solid var(--line);
+  padding: 0.5333rem;
+  border: 0.0667rem solid var(--line);
   text-align: left
 }
 
 .prose th {
   background: var(--surface-raised);
-  font: 600 10px var(--mono);
+  font: 600 0.6667rem var(--mono);
   text-transform: uppercase
 }
 
 .prose code {
   padding: .12em .35em;
-  border: 1px solid #252c31;
+  border: 0.0667rem solid #252c31;
   background: #101519;
   color: #9ae6b4;
   font: .88em var(--mono)
@@ -439,8 +441,8 @@ button,input {
 .prose pre {
   overflow: auto;
   margin: 1.2em 0;
-  padding: 15px;
-  border: 1px solid var(--line);
+  padding: 1rem;
+  border: 0.0667rem solid var(--line);
   background: #080a0c!important
 }
 
@@ -456,44 +458,44 @@ button,input {
 }
 
 .prose figcaption {
-  margin-top: 6px;
+  margin-top: 0.4rem;
   color: var(--muted);
-  font: 10px var(--mono)
+  font: 0.6667rem var(--mono)
 }
 
 .tag-list {
-  margin: 24px 0;
-  padding-top: 13px;
-  border-top: 1px solid var(--line)
+  margin: 1.6rem 0;
+  padding-top: 0.8667rem;
+  border-top: 0.0667rem solid var(--line)
 }
 
 .share-row {
   display: flex;
-  gap: 10px;
+  gap: 0.6667rem;
   align-items: center;
-  padding-top: 12px;
-  border-top: 1px solid var(--line);
+  padding-top: 0.8rem;
+  border-top: 0.0667rem solid var(--line);
   color: var(--muted);
-  font: 10px var(--mono);
+  font: 0.6667rem var(--mono);
   text-transform: uppercase
 }
 
 .share-row a {
-  padding: 4px 7px;
-  border: 1px solid var(--line)
+  padding: 0.2667rem 0.4667rem;
+  border: 0.0667rem solid var(--line)
 }
 
 .article-nav {
   display: flex;
   justify-content: space-between;
-  gap: 12px;
-  margin-top: 9px;
-  padding: 12px 16px
+  gap: 0.8rem;
+  margin-top: 0.6rem;
+  padding: 0.8rem 1.0667rem
 }
 
 .article-nav a {
   display: grid;
-  gap: 3px;
+  gap: 0.2rem;
   max-width: 48%
 }
 
@@ -504,49 +506,49 @@ button,input {
 
 .article-nav small {
   color: var(--green);
-  font: 10px var(--mono);
+  font: 0.6667rem var(--mono);
   text-transform: uppercase
 }
 
 .article-nav span {
-  font-size: 12px
+  font-size: 0.8rem
 }
 
 .search-panel {
-  padding: 16px
+  padding: 1.0667rem
 }
 
 .search-panel label {
   display: block;
-  margin-bottom: 7px;
+  margin-bottom: 0.4667rem;
   color: var(--muted);
-  font: 600 10px var(--mono);
+  font: 600 0.6667rem var(--mono);
   text-transform: uppercase
 }
 
 .search-panel input {
   width: 100%;
-  padding: 11px 12px;
-  border: 1px solid var(--line-strong);
+  padding: 0.7333rem 0.8rem;
+  border: 0.0667rem solid var(--line-strong);
   border-radius: 0;
   outline: 0;
   background: #080a0c;
   color: var(--text);
-  font: 13px var(--mono)
+  font: 0.8667rem var(--mono)
 }
 
 .search-panel input:focus {
   border-color: var(--green);
-  box-shadow: 0 0 0 1px #18c96430
+  box-shadow: 0 0 0 0.0667rem #18c96430
 }
 
 .search-hint,.empty-state {
   color: var(--faint);
-  font: 10px var(--mono)
+  font: 0.6667rem var(--mono)
 }
 
 .search-panel .post-row {
-  grid-template-columns: 92px minmax(0,1fr)
+  grid-template-columns: 6.1333rem minmax(0,1fr)
 }
 
 .search-panel .post-row-main p {
@@ -555,35 +557,35 @@ button,input {
 
 .button-link {
   display: inline-block;
-  margin-top: 15px;
-  padding: 7px 10px;
-  border: 1px solid var(--line-strong);
+  margin-top: 1rem;
+  padding: 0.4667rem 0.6667rem;
+  border: 0.0667rem solid var(--line-strong);
   color: var(--green);
-  font: 11px var(--mono)
+  font: 0.7333rem var(--mono)
 }
 
 .pagination {
   display: flex;
   justify-content: center;
-  gap: 6px;
-  padding: 12px 0
+  gap: 0.4rem;
+  padding: 0.8rem 0
 }
 
 .pagination a,.pagination span {
-  padding: 5px 9px;
-  border: 1px solid var(--line);
-  font: 10px var(--mono)
+  padding: 0.3333rem 0.6rem;
+  border: 0.0667rem solid var(--line);
+  font: 0.6667rem var(--mono)
 }
 
 .site-footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
-  padding: 13px 4px 22px;
+  gap: 0.8rem;
+  padding: 0.8667rem 0.2667rem 1.4667rem;
   color: var(--faint);
   text-align: center;
-  font: 10px var(--mono)
+  font: 0.6667rem var(--mono)
 }
 
 .site-footer a {
@@ -596,15 +598,14 @@ button,input {
 
 @media(max-width:780px) {
   .site-shell {
-    zoom: 1;
-    width: calc(100% - 22px);
-    min-height: calc(100vh - 11px);
-    margin-top: 11px
+    width: calc(100% - 1.4667rem);
+    min-height: calc(100vh - 0.7333rem);
+    margin-top: 0.7333rem
   }
 
   .topbar {
     flex-wrap: wrap;
-    gap: 8px
+    gap: 0.5333rem
   }
 
   .primary-nav {
@@ -613,8 +614,8 @@ button,input {
     justify-content: flex-start;
     overflow: auto;
     margin: 0;
-    border-top: 1px solid var(--line);
-    padding-top: 5px
+    border-top: 0.0667rem solid var(--line);
+    padding-top: 0.3333rem
   }
 
   .primary-nav a {
@@ -626,8 +627,8 @@ button,input {
   }
 
   .post-row {
-    grid-template-columns: 100px minmax(0,1fr) 60px 40px;
-    gap: 8px
+    grid-template-columns: 6.6667rem minmax(0,1fr) 4rem 2.6667rem;
+    gap: 0.5333rem
   }
 
   .post-row-tags {
@@ -635,30 +636,30 @@ button,input {
   }
 
   .read-time {
-    font-size: 9px
+    font-size: 0.6rem
   }
 
   .intro-panel,.page-heading,.error-panel {
-    padding: 16px
+    padding: 1.0667rem
   }
 
   .article-panel {
-    padding: 18px 16px
+    padding: 1.2rem 1.0667rem
   }
 
   .prose {
-    margin-top: 20px
+    margin-top: 1.3333rem
   }
 
   .section-panel {
-    padding: 0 10px
+    padding: 0 0.6667rem
   }
 
 }
 
 @media(max-width:480px) {
   .site-shell {
-    width: calc(100% - 22px)
+    width: calc(100% - 1.4667rem)
   }
 
   .topbar-tools {
@@ -668,8 +669,8 @@ button,input {
 
   .post-row {
     grid-template-columns: 1fr auto auto;
-    gap: 4px 10px;
-    padding: 12px 2px
+    gap: 0.2667rem 0.6667rem;
+    padding: 0.8rem 0.1333rem
   }
 
   .post-row time {
@@ -700,11 +701,11 @@ button,input {
   }
 
   .article-meta {
-    gap: 8px
+    gap: 0.5333rem
   }
 
   .section-heading>a {
-    font-size: 9px
+    font-size: 0.6rem
   }
 
 }
@@ -719,37 +720,37 @@ button,input {
 .feed-link {
   margin-left: auto;
   color: var(--green);
-  font: 10px var(--mono)
+  font: 0.6667rem var(--mono)
 }
 
 .scroll-top {
   position: fixed;
-  right: 18px;
-  bottom: 18px;
-  width: 34px;
-  height: 34px;
-  border: 1px solid var(--line-strong);
+  right: 1.2rem;
+  bottom: 1.2rem;
+  width: 2.2667rem;
+  height: 2.2667rem;
+  border: 0.0667rem solid var(--line-strong);
   background: #0c0f12;
   color: var(--green);
-  font: 16px var(--mono);
+  font: 1.0667rem var(--mono);
   cursor: pointer
 }
 
 .prose pre {
   position: relative;
-  padding-top: 10px;
-  padding-right: 74px
+  padding-top: 0.6667rem;
+  padding-right: 4.9333rem
 }
 
 .copy-code {
   position: absolute;
-  top: 6px;
-  right: 7px;
-  padding: 3px 6px;
-  border: 1px solid var(--line);
+  top: 0.4rem;
+  right: 0.4667rem;
+  padding: 0.2rem 0.4rem;
+  border: 0.0667rem solid var(--line);
   background: var(--surface-raised);
   color: var(--muted);
-  font: 9px var(--mono);
+  font: 0.6rem var(--mono);
   cursor: pointer
 }
 
@@ -785,40 +786,40 @@ button,input {
 
 /* Keep article title, metadata, and contents aligned to the reading measure */
 .article-heading,.article-panel>.toc,.article-panel>.tag-list,.article-panel>.share-row {
-  width: min(100%,790px);
+  width: min(100%,52.6667rem);
   margin-left: auto;
   margin-right: auto
 }
 
 .article-heading>h1 {
-  margin: 11px 0 12px;
-  font-size: clamp(27px,4vw,39px);
+  margin: 0.7333rem 0 0.8rem;
+  font-size: clamp(1.8rem,4vw,2.6rem);
   line-height: 1.2;
   letter-spacing: -.04em
 }
 
 .article-panel>.toc {
-  margin-top: 20px;
-  margin-bottom: 20px
+  margin-top: 1.3333rem;
+  margin-bottom: 1.3333rem
 }
 
 .home-socials {
   display: flex;
   align-items: center;
   flex-wrap: nowrap;
-  gap: 7px;
-  margin-top: 14px
+  gap: 0.4667rem;
+  margin-top: 0.9333rem
 }
 
 .social-icon {
   display: flex;
-  flex: 0 0 31px;
+  flex: 0 0 2.0667rem;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  width: 31px;
-  height: 31px;
-  border: 1px solid var(--line);
+  width: 2.0667rem;
+  height: 2.0667rem;
+  border: 0.0667rem solid var(--line);
   color: var(--muted);
   background: var(--surface)
 }
@@ -831,13 +832,13 @@ button,input {
 .social-icon svg {
   display: block;
   flex: none;
-  width: 16px;
-  height: 16px
+  width: 1.0667rem;
+  height: 1.0667rem
 }
 
 :focus-visible {
-  outline: 2px solid var(--green);
-  outline-offset: 2px
+  outline: 0.1333rem solid var(--green);
+  outline-offset: 0.1333rem
 }
 
 .scroll-top[hidden] {
