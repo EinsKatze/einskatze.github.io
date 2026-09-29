@@ -28,19 +28,6 @@
                 href="https://einskatze.github.io/de/posts/win10_iot_upgrade/"
                 />
   </url><url>
-    <loc>https://einskatze.github.io/de/posts/</loc>
-    <lastmod>2025-03-17T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/posts/"
-                />
-  </url><url>
     <loc>https://einskatze.github.io/de/about/</loc>
     <lastmod>2025-03-03T16:00:00+01:00</lastmod>
     <xhtml:link
@@ -80,16 +67,16 @@
                 href="https://einskatze.github.io/de/contact/"
                 />
   </url><url>
-    <loc>https://einskatze.github.io/de/categories/</loc>
+    <loc>https://einskatze.github.io/de/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://einskatze.github.io/categories/"
+                href="https://einskatze.github.io/archives/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://einskatze.github.io/de/categories/"
+                href="https://einskatze.github.io/de/archives/"
                 />
   </url><url>
     <loc>https://einskatze.github.io/de/search/</loc>

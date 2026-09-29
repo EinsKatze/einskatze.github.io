@@ -6,13 +6,13 @@
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/"
+                hreflang="de"
+                href="https://einskatze.github.io/de/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/"
+                hreflang="en-US"
+                href="https://einskatze.github.io/"
                 />
   </url><url>
     <loc>https://einskatze.github.io/posts/mac_tm_backup/</loc>
@@ -20,41 +20,31 @@
   </url><url>
     <loc>https://einskatze.github.io/posts/</loc>
     <lastmod>2026-06-18T00:00:00+00:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/posts/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/posts/"
-                />
   </url><url>
     <loc>https://einskatze.github.io/posts/win10_iot_upgrade/</loc>
     <lastmod>2025-03-17T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/posts/win10_iot_upgrade/"
+                hreflang="de"
+                href="https://einskatze.github.io/de/posts/win10_iot_upgrade/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/posts/win10_iot_upgrade/"
+                hreflang="en-US"
+                href="https://einskatze.github.io/posts/win10_iot_upgrade/"
                 />
   </url><url>
     <loc>https://einskatze.github.io/about/</loc>
     <lastmod>2025-03-03T16:00:00+01:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/about/"
+                hreflang="de"
+                href="https://einskatze.github.io/de/about/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/about/"
+                hreflang="en-US"
+                href="https://einskatze.github.io/about/"
                 />
   </url><url>
     <loc>https://einskatze.github.io/posts/interesting_things/</loc>
@@ -67,62 +57,62 @@
     <lastmod>2023-05-11T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/gpg/"
+                hreflang="de"
+                href="https://einskatze.github.io/de/gpg/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/gpg/"
+                hreflang="en-US"
+                href="https://einskatze.github.io/gpg/"
                 />
   </url><url>
     <loc>https://einskatze.github.io/contact/</loc>
     <lastmod>2023-03-07T00:00:00+00:00</lastmod>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/contact/"
-                />
-    <xhtml:link
-                rel="alternate"
                 hreflang="de"
                 href="https://einskatze.github.io/de/contact/"
                 />
-  </url><url>
-    <loc>https://einskatze.github.io/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="https://einskatze.github.io/categories/"
+                href="https://einskatze.github.io/contact/"
                 />
+  </url><url>
+    <loc>https://einskatze.github.io/archives/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="de"
-                href="https://einskatze.github.io/de/categories/"
+                href="https://einskatze.github.io/de/archives/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en-US"
+                href="https://einskatze.github.io/archives/"
                 />
   </url><url>
     <loc>https://einskatze.github.io/search/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/search/"
+                hreflang="de"
+                href="https://einskatze.github.io/de/search/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/search/"
+                hreflang="en-US"
+                href="https://einskatze.github.io/search/"
                 />
   </url><url>
     <loc>https://einskatze.github.io/tags/</loc>
     <xhtml:link
                 rel="alternate"
-                hreflang="en-US"
-                href="https://einskatze.github.io/tags/"
+                hreflang="de"
+                href="https://einskatze.github.io/de/tags/"
                 />
     <xhtml:link
                 rel="alternate"
-                hreflang="de"
-                href="https://einskatze.github.io/de/tags/"
+                hreflang="en-US"
+                href="https://einskatze.github.io/tags/"
                 />
   </url>
 </urlset>

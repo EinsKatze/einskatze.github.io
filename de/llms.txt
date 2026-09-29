@@ -1,0 +1,7 @@
+# EinsKatze
+
+- [Guide: Upgrade Windows 10 -> Windows 10 IoT Enterprise LTSC](https://einskatze.github.io/de/posts/win10_iot_upgrade/)
+- [Über mich](https://einskatze.github.io/de/about/)
+- [Mein öffentlicher GPG-Schlüssel](https://einskatze.github.io/de/gpg/)
+- [Kontakt](https://einskatze.github.io/de/contact/)
+

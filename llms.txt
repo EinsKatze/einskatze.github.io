@@ -1,0 +1,10 @@
+# EinsKatze
+
+- [Making a Mac Time Machine Backup on an SMB Share](https://einskatze.github.io/posts/mac_tm_backup/)
+- [Guide: Upgrade Windows 10 -> Windows 10 IoT Enterprise LTSC](https://einskatze.github.io/posts/win10_iot_upgrade/)
+- [About me](https://einskatze.github.io/about/)
+- [List of Interesting Things](https://einskatze.github.io/posts/interesting_things/)
+- [Do a quick system scan with ClamAV](https://einskatze.github.io/posts/clamav_quickscan/)
+- [My Public GPG Key](https://einskatze.github.io/gpg/)
+- [Contact](https://einskatze.github.io/contact/)
+
