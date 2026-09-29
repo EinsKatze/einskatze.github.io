@@ -1,0 +1,2 @@
+{{- $description := .Description | default .Summary | default .Site.Params.description | plainify | htmlUnescape | replaceRE "\\s+" " " | strings.TrimSpace -}}
+{{- $description | truncate 300 -}}

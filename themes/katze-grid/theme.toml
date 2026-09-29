@@ -3,7 +3,7 @@ license = "MIT"
 licenselink = "https://opensource.org/license/mit"
 description = "A compact dark technical blog theme with panel-based layouts."
 tags = ["blog", "dark", "minimal", "technical", "grid"]
-features = ["multilingual", "search", "table of contents", "taxonomy", "RSS", "JSON"]
+features = ["multilingual", "search", "table of contents", "taxonomy", "archives", "RSS", "JSON", "shortcodes"]
 min_version = "0.158.0"
 
 

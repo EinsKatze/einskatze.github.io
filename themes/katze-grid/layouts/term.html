@@ -1,0 +1,5 @@
+{{ define "main" }}
+{{ $count := len .Pages }}
+<section class="page-heading panel"><div class="panel-kicker">{{ if eq $count 1 }}{{ i18n "postCount" }}{{ else }}{{ i18n "postsCount" }}{{ end }} <span>{{ $count }}</span></div><h1>#{{ .Title }}</h1>{{ with .Content }}<div class="prose section-content">{{ . }}</div>{{ end }}</section>
+<section class="section-panel panel"><div class="post-list">{{ range .Paginator.Pages }}{{ partial "post-row.html" . }}{{ end }}</div>{{ template "_internal/pagination.html" . }}</section>
+{{ end }}

@@ -1,0 +1,2 @@
+{{- $src := .Get "src" | default (.Get 0) -}}{{- $resource := .Page.Resources.GetMatch $src -}}
+<video controls preload="metadata"{{ with .Get "poster" }} poster="{{ . | safeURL }}"{{ end }}{{ with .Get "class" }} class="{{ . }}"{{ end }}>{{ with $resource }}<source src="{{ .RelPermalink }}"{{ with $.Get "type" }} type="{{ . }}"{{ end }}>{{ else }}<source src="{{ $src | safeURL }}"{{ with .Get "type" }} type="{{ . }}"{{ end }}>{{ end }}{{ .Inner }}</video>

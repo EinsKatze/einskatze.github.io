@@ -3,6 +3,10 @@ title = "EinsKatze"
 theme = "katze-grid"
 defaultContentLanguage = "en"
 locale = "en-US"
+enableRobotsTXT = true
+
+[markup]
+_merge = "deep"
 
 [minify]
 disableXML = true
@@ -12,9 +16,9 @@ minifyOutput = true
 title = "EinsKatze"
 description = "EinsKatze's Blog"
 author = "EinsKatze"
-defaultTheme = "dark"
 ShowReadingTime = true
 ShowShareButtons = true
+shareButtons = ["x", "reddit"]
 displayFullLangName = true
 ShowPostNavLinks = true
 ShowBreadCrumbs = true
@@ -25,6 +29,7 @@ UseHugoToc = true
 disableSpecial1stPost = false
 disableScrollToTop = false
 comments = false
+mainSections = ["posts"]
 hidemeta = false
 hideSummary = false
 showtoc = false
@@ -64,6 +69,12 @@ weight = 1
   url = "/search"
   weight = 50
 
+  [[languages.en.menu.main]]
+  identifier = "archives"
+  name = "Archives"
+  url = "/archives"
+  weight = 60
+
   [languages.en.params]
   flag = "🇺🇸"
 
@@ -101,6 +112,12 @@ weight = 2
   url = "/search"
   weight = 50
 
+  [[languages.de.menu.main]]
+  identifier = "archives"
+  name = "Archiv"
+  url = "/archives"
+  weight = 60
+
   [languages.de.params]
   flag = "🇩🇪"
 
@@ -110,7 +127,13 @@ weight = 2
 
 
 [outputs]
-home = [ "HTML", "RSS", "JSON" ]
+home = [ "HTML", "RSS", "JSON", "LLMS" ]
+
+[outputFormats.LLMS]
+mediaType = "text/plain"
+baseName = "llms"
+isPlainText = true
+notAlternative = true
 
 [params.assets]
   favicon = "/favicon.ico"
@@ -186,6 +209,12 @@ home = [ "HTML", "RSS", "JSON" ]
   location = 0
   distance = 1_000
   threshold = 0.4
-  minMatchCharLength = 0
+  minMatchCharLength = 2
   limit = 10
-  keys = [ "title", "permalink", "summary", "content", "tags" ]
+  keys = [ "title", "summary", "content", "tags" ]
+
+[pagination]
+pagerSize = 10
+
+[taxonomies]
+tag = "tags"

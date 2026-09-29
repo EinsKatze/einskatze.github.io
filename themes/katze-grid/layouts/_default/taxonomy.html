@@ -1,0 +1,11 @@
+{{ define "main" }}
+{{ if eq .Kind "taxonomy" }}
+{{ $terms := .Data.Terms | default dict }}{{ $count := len $terms }}
+<section class="page-heading panel"><div class="panel-kicker">{{ i18n "taxonomyTerms" }} <span>{{ if eq $count 1 }}1 {{ i18n "item" }}{{ else }}{{ $count }} {{ i18n "items" }}{{ end }}</span></div><h1>{{ .Title }}</h1>{{ with .Description }}<p>{{ . }}</p>{{ end }}</section>
+<section class="section-panel panel taxonomy-panel"><ul class="term-list">{{ range $terms.Alphabetical }}{{ $pages := .Pages }}<li><a href="{{ .Page.RelPermalink }}">#{{ .Page.Title }}</a><span>{{ len $pages }} {{ if eq (len $pages) 1 }}{{ i18n "postCount" }}{{ else }}{{ i18n "postsCount" }}{{ end }}</span></li>{{ end }}</ul></section>
+{{ else }}
+{{ $count := len .Pages }}
+<section class="page-heading panel"><div class="panel-kicker">{{ if eq $count 1 }}{{ i18n "postCount" }}{{ else }}{{ i18n "postsCount" }}{{ end }} <span>{{ $count }}</span></div><h1>#{{ .Title }}</h1></section>
+<section class="section-panel panel"><div class="post-list">{{ range .Paginator.Pages }}{{ partial "post-row.html" . }}{{ end }}</div>{{ template "_internal/pagination.html" . }}</section>
+{{ end }}
+{{ end }}

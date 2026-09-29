@@ -1,46 +1,56 @@
-# workflow for building and deploying a Hugo site to GitHub Pages
----
-name: Deploy Hugo site via GitHub Pages 
+name: Build and deploy Hugo site
 
 on:
   push:
-    branches:
-      - main # Set a branch to deploy
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [main]
+  pull_request:
   workflow_dispatch:
 
 permissions:
-  contents: write
+  contents: read
 
 jobs:
-  deploy:
+  build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
         with:
-          submodules: false # PaperMod is tracked in repo
-          fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
-
+          submodules: false
+          fetch-depth: 0
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v3
         with:
-          hugo-version: "latest"
+          hugo-version: "0.158.0"
           extended: true
-
-      - uses: actions/cache@v3
+      - uses: actions/cache@v4
         with:
           path: /home/runner/.cache/hugo_cache
-          key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+          key: ${{ runner.os }}-hugo-${{ hashFiles('config.toml', 'themes/katze-grid/config/**', 'go.mod', 'go.sum') }}
           restore-keys: |
-            ${{ runner.os }}-hugomod-
+            ${{ runner.os }}-hugo-
+      - name: Validate build
+        run: hugo --panicOnWarning --printI18nWarnings --ignoreCache --gc
 
-      - name: Build
+  deploy:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: false
+          fetch-depth: 0
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v3
+        with:
+          hugo-version: "0.158.0"
+          extended: true
+      - name: Build site
         run: hugo --minify
-
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3
-        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public

@@ -1,0 +1,5 @@
+{{- $src := .Get "src" | default (.Get 0) -}}
+{{- $alt := .Get "alt" | default (.Get 1) -}}
+{{- $caption := .Get "caption" | default (.Get 2) -}}
+{{- $image := .Page.Resources.GetMatch $src -}}
+<figure>{{ with $image }}<img src="{{ .RelPermalink }}" alt="{{ $alt }}" width="{{ .Width }}" height="{{ .Height }}" loading="lazy" decoding="async">{{ else }}<img src="{{ $src | safeURL }}" alt="{{ $alt }}" loading="lazy" decoding="async">{{ end }}{{ with $caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>

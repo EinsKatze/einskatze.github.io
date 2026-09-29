@@ -1,0 +1,1 @@
+<details class="collapse"><summary>{{ .Get "summary" | default (.Get 0) | default (i18n "contents") }}</summary>{{ .Inner | markdownify }}</details>

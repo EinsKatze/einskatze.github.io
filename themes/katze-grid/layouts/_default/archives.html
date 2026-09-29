@@ -1,0 +1,6 @@
+{{ define "main" }}
+{{ $sections := site.Params.mainSections | default (slice "posts") }}
+{{ $pages := where site.RegularPages "Section" "in" $sections }}
+<section class="page-heading panel"><div class="panel-kicker">{{ i18n "archive" }} <span>{{ len $pages }} {{ i18n "items" }}</span></div><h1>{{ .Title }}</h1></section>
+{{ range $pages.GroupByDate "2006" }}<section class="section-panel panel archive-year"><h2>{{ .Key }} <span>{{ len .Pages }}</span></h2><div class="post-list">{{ range .Pages }}{{ partial "post-row.html" . }}{{ end }}</div></section>{{ end }}
+{{ end }}

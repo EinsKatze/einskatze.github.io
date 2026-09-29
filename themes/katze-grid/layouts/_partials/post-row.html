@@ -1,7 +1,8 @@
-<article class="post-row">
+{{ $showWords := .Param "ShowWordCount" }}{{ $showTime := .Param "ShowReadingTime" }}
+<article class="post-row{{ if .Params.tags }} has-tags{{ end }}{{ if $showWords }} has-word-count{{ end }}{{ if $showTime }} has-reading-time{{ end }}">
   <time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_long" .Date }}</time>
   <div class="post-row-main"><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ if and (not .Site.Params.hideSummary) .Summary }}<p>{{ .Summary | plainify | htmlUnescape | truncate 180 }}</p>{{ end }}</div>
-  <div class="post-row-tags">{{ with .Params.tags }}{{ range first 2 . }}<a href="{{ (printf "/tags/%s/" (. | urlize)) | relLangURL }}">#{{ . }}</a>{{ end }}{{ end }}</div>
-  {{ if .Site.Params.ShowWordCount }}<span class="word-count">{{ .WordCount }} {{ i18n "wordsShort" }}</span>{{ end }}
-  {{ if .Site.Params.ShowReadingTime }}<span class="read-time">{{ .ReadingTime }} {{ i18n "minuteShort" }}</span>{{ end }}
+  {{ with .Params.tags }}<div class="post-row-tags">{{ range first 2 . }}{{ $tag := . }}{{ with site.GetPage (printf "/tags/%s" $tag) }}<a href="{{ .RelPermalink }}">#{{ $tag }}</a>{{ end }}{{ end }}</div>{{ end }}
+  {{ if $showWords }}<span class="word-count">{{ .WordCount }} {{ i18n "wordsShort" }}</span>{{ end }}
+  {{ if $showTime }}<span class="read-time">{{ .ReadingTime }} {{ i18n "minuteShort" }}</span>{{ end }}
 </article>

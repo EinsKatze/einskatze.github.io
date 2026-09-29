@@ -1,0 +1,4 @@
+# {{ site.Title }}
+
+{{ range site.RegularPages }}{{ if and (not .Params.searchHidden) (ne .Layout "archives") (ne .Layout "search") }}- [{{ .Title }}]({{ .Permalink }})
+{{ end }}{{ end }}
