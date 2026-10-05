@@ -7,7 +7,7 @@ A curated collection of interesting tools, services, guides, and resources that 
 
 <!--more-->
 
-> Last updated: 07.09.2026
+> Last updated: 05.10.2026
 
 ## Archiving
 - [RedditToMarkDown](https://farnots.github.io/RedditToMarkdown/) - Save Reddit threads as Markdown files.
@@ -19,13 +19,18 @@ A curated collection of interesting tools, services, guides, and resources that 
 ## Development
 - [SVG Tutorial](https://svg-tutorial.com) - Learn how to code vector graphics in HTML with SVG.
 
+## Fonts
+- [Commit Mono](https://commitmono.com/) - A neutral, highly legible monospaced font engineered for programmers.
+- [Departure Mono](https://departuremono.com/) - A monospaced pixel font with a lo-fi, techy vibe.
+- [Geist](https://vercel.com/font) - A typeface specifically designed for developers and designers.
+
+## PDF
+- [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) - Powerful, locally hosted web application for PDF manipulation (merge, split, convert, OCR).
+- [BentoPDF](https://www.bentopdf.com/) - Web-based PDF editor and viewer. ([GitHub](https://github.com/BentoPDF/bentopdf))
+
 ## Privacy
 - [JustDeleteMe](https://justdeleteme.xyz/) - Directory of direct links and instructions for deleting accounts from web services.
 - [LocalSend](https://localsend.org/) - Open-source, cross-platform local network file sharing (AirDrop alternative) that works completely offline without accounts or external servers.
-
-## Utilities
-- [IT-Tools](https://it-tools.tech/) - Handy collection of web-based developer and sysadmin utilities ([GitHub](https://github.com/CorentinTh/it-tools)).
-- [Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) - Powerful, locally hosted web application for PDF manipulation (merge, split, convert, OCR).
 
 ## Torrenting
 - [awesome-german-piracy](https://github.com/SeppPenner/awesome-german-piracy) - A curated list of (not only) German indexing and sharing sites.
@@ -33,6 +38,11 @@ A curated collection of interesting tools, services, guides, and resources that 
 
 ## Screensharing
 - [Pin.gl](https://pin.gl/) - Ultra-low-latency screen and camera sharing (browser-based).
+- [Screego](https://screego.net/) - Web-based screen sharing. ([GitHub](https://github.com/screego/server))
+
+## Utilities
+- [IT-Tools](https://it-tools.tech/) - Handy collection of web-based developer and sysadmin utilities ([GitHub](https://github.com/CorentinTh/it-tools)).
+- [Dev-Toys](https://devtoys.app/) - A collection of developer tools. Just as above but as a desktop app. ([GitHub](https://github.com/DevToys-app/DevToys))
 
 ## Misc
 - [Excalidraw](https://excalidraw.com) - Virtual whiteboard for sketching hand-drawn diagrams.
@@ -45,8 +55,3 @@ A curated collection of interesting tools, services, guides, and resources that 
   - *I've donated to this project, by the way! ❤️*
 - [Website themes with uBlock Origin](https://darekkay.com/blog/ublock-website-themes/) - Guide to injecting custom CSS themes into websites using uBlock Origin.
 - [Displaying Website Content on an E-Ink Display](https://mfasold.net/blog/displaying-website-content-on-an-e-ink-display) - Write-up on rendering web content on low-power E-Ink screens.
-
-## Fonts
-- [Commit Mono](https://commitmono.com/) - A neutral, highly legible monospaced font engineered for programmers.
-- [Departure Mono](https://departuremono.com/) - A monospaced pixel font with a lo-fi, techy vibe.
-- [Geist](https://vercel.com/font) - A typeface specifically designed for developers and designers.
