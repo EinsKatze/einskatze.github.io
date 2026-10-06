@@ -13,14 +13,15 @@
   {{ with .Params.noindex }}<meta name="robots" content="noindex,follow">{{ end }}
   <meta property="og:title" content="{{ .Title }}">
   <meta property="og:description" content="{{ $description }}">
-  {{ $schemaType := "WebPage" }}{{ if .IsHome }}{{ $schemaType = "WebSite" }}{{ else if and .IsPage (eq .Section "posts") }}{{ $schemaType = "BlogPosting" }}{{ end }}
+  {{ $schemaType := "WebPage" }}{{ if .IsHome }}{{ $schemaType = "WebSite" }}{{ else if partial "is-article.html" . }}{{ $schemaType = "BlogPosting" }}{{ end }}
   <meta property="og:type" content="{{ if eq $schemaType "BlogPosting" }}article{{ else }}website{{ end }}">
   {{ if eq $schemaType "BlogPosting" }}<meta property="article:published_time" content="{{ .Date.Format "2006-01-02T15:04:05Z07:00" }}"><meta property="article:modified_time" content="{{ (.Lastmod | default .Date).Format "2006-01-02T15:04:05Z07:00" }}">{{ end }}
   <meta property="og:url" content="{{ $canonical }}">
   <meta property="og:site_name" content="{{ .Site.Title }}">
-  {{ $image := .Params.cover.image }}{{ if not $image }}{{ with first 1 (.Resources.ByType "image") }}{{ $image = (index . 0).RelPermalink }}{{ end }}{{ end }}
+  {{ $image := "" }}{{ with .Params.cover.image }}{{ $cover := partial "resolve-image.html" (dict "page" $ "src" .) }}{{ $image = $cover.src }}{{ end }}{{ if not $image }}{{ with first 1 (.Resources.ByType "image") }}{{ $image = (index . 0).RelPermalink }}{{ end }}{{ end }}
   {{ with $image }}<meta property="og:image" content="{{ . | absURL }}">{{ end }}
   <meta name="twitter:card" content="{{ if $image }}summary_large_image{{ else }}summary{{ end }}">
+  {{ with $image }}<meta name="twitter:image" content="{{ . | absURL }}">{{ end }}
   <meta name="twitter:title" content="{{ .Title }}">
   <meta name="twitter:description" content="{{ $description }}">
   {{ $schema := dict "@context" "https://schema.org" "@type" $schemaType "name" .Title "headline" .Title "description" $description "url" $canonical "inLanguage" .Site.Language.Lang }}

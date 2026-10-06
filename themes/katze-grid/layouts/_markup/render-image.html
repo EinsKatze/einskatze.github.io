@@ -1,15 +1,8 @@
-{{- $src := .Destination -}}
-{{- $image := false -}}
-{{- $url := urls.Parse .Destination -}}
-{{- if not $url.IsAbs -}}
-  {{- $path := strings.TrimPrefix "./" $url.Path -}}
-  {{- $image = or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+{{- $image := partial "resolve-image.html" (dict "page" .PageInner "src" .Destination) -}}
+{{- if and $image.resource (reflect.IsImageResourceProcessable $image.resource) -}}
+  {{- if gt $image.width 1200 -}}
+    {{- $resized := $image.resource.Resize "1200x webp q82" -}}
+    {{- $image = merge $image (dict "src" $resized.RelPermalink "width" $resized.Width "height" $resized.Height) -}}
+  {{- end -}}
 {{- end -}}
-{{- if $image -}}
-  {{- $resized := $image -}}
-  {{- if gt $image.Width 1200 -}}{{- $resized = $image.Resize "1200x webp q82" -}}{{- end -}}
-  {{- $src = $resized.RelPermalink -}}
-<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} width="{{ $resized.Width }}" height="{{ $resized.Height }}" loading="lazy" decoding="async">
-{{- else -}}
-<img src="{{ $src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }} loading="lazy" decoding="async">
-{{- end -}}
+<img src="{{ $image.src }}" alt="{{ .Text }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ with $image.width }} width="{{ . }}" height="{{ $image.height }}"{{ end }} loading="lazy" decoding="async">

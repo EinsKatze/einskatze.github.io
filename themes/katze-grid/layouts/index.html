@@ -4,8 +4,11 @@
   <p>{{ with .Site.Params.homeInfoParams.Content }}{{ . | markdownify }}{{ else }}{{ .Site.Params.description }}{{ end }}</p>
   {{ with .Site.Params.socialIcons }}<div class="home-socials" aria-label="{{ i18n "socialLinks" }}">{{ range . }}<a class="social-icon" href="{{ .url }}" rel="me noopener" target="_blank" aria-label="{{ .name }}" title="{{ .name }}">{{ partial "social-icon.html" . }}</a>{{ end }}</div>{{ end }}
 </section>
+{{ $sections := .Site.Params.mainSections | default (slice "posts") }}
+{{ $allPostsURL := .Site.Params.allPostsURL | default (printf "%s/" (index $sections 0)) | relLangURL }}
+{{ if not .Site.Params.allPostsURL }}{{ with .Site.GetPage (index $sections 0) }}{{ $allPostsURL = .RelPermalink }}{{ end }}{{ end }}
 <section class="section-panel panel">
-  <div class="section-heading"><h2><span>//</span> {{ i18n "recentPosts" }}</h2><a href="{{ "posts/" | relLangURL }}">{{ i18n "allPosts" }} <b>↗</b></a></div>
-  <div class="post-list">{{ $sections := .Site.Params.mainSections | default (slice "posts") }}{{ $pages := where .Site.RegularPages "Section" "in" $sections }}{{ range first 10 (sort $pages "Date" "desc") }}{{ partial "post-row.html" . }}{{ end }}</div>
+  <div class="section-heading"><h2><span>//</span> {{ i18n "recentPosts" }}</h2><a href="{{ $allPostsURL }}">{{ i18n "allPosts" }} <b>↗</b></a></div>
+  <div class="post-list">{{ $pages := where .Site.RegularPages "Section" "in" $sections }}{{ range first 10 (sort $pages "Date" "desc") }}{{ partial "post-row.html" . }}{{ end }}</div>
 </section>
 {{ end }}

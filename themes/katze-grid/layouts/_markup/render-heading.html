@@ -1,0 +1,1 @@
+<h{{ .Level }} id="{{ .Anchor }}"{{ range $name, $value := .Attributes }}{{ if ne $name "id" }} {{ $name | safeHTMLAttr }}="{{ $value }}"{{ end }}{{ end }}>{{ .Text }}{{ if ne (.PageInner.Param "ShowHeadingLinks") false }} <a class="heading-link" href="#{{ .Anchor }}" aria-label="{{ printf (i18n "headingLink") (.Text | plainify) }}"></a>{{ end }}</h{{ .Level }}>

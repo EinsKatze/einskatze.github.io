@@ -1,7 +1,7 @@
-{{ $showWords := .Param "ShowWordCount" }}{{ $showTime := .Param "ShowReadingTime" }}
+{{ $showWords := and (not (.Param "hidemeta")) (.Param "ShowWordCount") }}{{ $showTime := and (not (.Param "hidemeta")) (.Param "ShowReadingTime") }}
 <article class="post-row{{ if .Params.tags }} has-tags{{ end }}{{ if $showWords }} has-word-count{{ end }}{{ if $showTime }} has-reading-time{{ end }}">
   <time datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_long" .Date }}</time>
-  <div class="post-row-main"><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ if and (not .Site.Params.hideSummary) .Summary }}<p>{{ .Summary | plainify | htmlUnescape | truncate 180 }}</p>{{ end }}</div>
+  <div class="post-row-main"><h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>{{ if and (not (.Param "hideSummary")) .Summary }}<p>{{ .Summary | plainify | htmlUnescape | truncate 180 }}</p>{{ end }}</div>
   {{ with .Params.tags }}<div class="post-row-tags">{{ range first 2 . }}{{ $tag := . }}{{ with site.GetPage (printf "/tags/%s" $tag) }}<a href="{{ .RelPermalink }}">#{{ $tag }}</a>{{ end }}{{ end }}</div>{{ end }}
   {{ if $showWords }}<span class="word-count">{{ .WordCount }} {{ i18n "wordsShort" }}</span>{{ end }}
   {{ if $showTime }}<span class="read-time">{{ .ReadingTime }} {{ i18n "minuteShort" }}</span>{{ end }}

@@ -1,0 +1,15 @@
+{{- $src := .src -}}
+{{- $resource := false -}}
+{{- $url := urls.Parse $src -}}
+{{- if and (not $url.IsAbs) (not $url.Host) -}}
+  {{- $path := strings.TrimPrefix "./" $url.Path -}}
+  {{- $resource = or (.page.Resources.Get $path) (resources.Get (strings.TrimPrefix "/" $path)) -}}
+{{- end -}}
+{{- $result := dict "src" $src "resource" $resource -}}
+{{- with $resource -}}
+  {{- $result = merge $result (dict "src" .RelPermalink) -}}
+  {{- if reflect.IsImageResourceWithMeta . -}}
+    {{- $result = merge $result (dict "width" .Width "height" .Height) -}}
+  {{- end -}}
+{{- end -}}
+{{- return $result -}}

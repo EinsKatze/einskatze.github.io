@@ -1,0 +1,1 @@
+{{- return (and .IsPage (in (.Site.Params.mainSections | default (slice "posts")) .Section)) -}}

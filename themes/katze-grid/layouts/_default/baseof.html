@@ -10,7 +10,7 @@
       {{ partial "extend_footer.html" . }}
       {{ partial "footer.html" . }}
       {{ if not .Site.Params.disableScrollToTop }}<button class="scroll-top" type="button" aria-label="{{ i18n "scrollTop" }}" hidden>↑</button>{{ end }}
-      {{ if or .Site.Params.ShowCodeCopyButtons (not .Site.Params.disableScrollToTop) }}{{ $siteJS := resources.Get "js/site.js" | minify | fingerprint }}<script defer src="{{ $siteJS.RelPermalink }}" integrity="{{ $siteJS.Data.Integrity }}" data-copy-enabled="{{ .Site.Params.ShowCodeCopyButtons }}" data-copy-label="{{ i18n "copy" }}" data-copied-label="{{ i18n "copied" }}" data-failed-label="{{ i18n "copyFailed" }}"></script>{{ end }}
+      {{ if or (.Param "ShowCodeCopyButtons") (not .Site.Params.disableScrollToTop) (and (partial "is-article.html" .) (.Param "ShowShareButtons") (ne (.Param "ShowCopyLink") false)) }}{{ $siteJS := resources.Get "js/site.js" | minify | fingerprint }}<script defer src="{{ $siteJS.RelPermalink }}" integrity="{{ $siteJS.Data.Integrity }}" data-copy-enabled="{{ (.Param "ShowCodeCopyButtons") }}" data-copy-label="{{ i18n "copy" }}" data-copied-label="{{ i18n "copied" }}" data-failed-label="{{ i18n "copyFailed" }}"></script>{{ end }}
     </div>
   </body>
 </html>

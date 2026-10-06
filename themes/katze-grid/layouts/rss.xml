@@ -1,9 +1,17 @@
 {{- $sections := site.Params.mainSections | default (slice "posts") -}}
-{{- $pages := where site.RegularPages "Section" "in" $sections -}}
+{{- $pages := .Pages -}}
+{{- if .IsHome -}}
+  {{- $pages = where .Site.RegularPages "Section" "in" $sections -}}
+{{- else if .IsSection -}}
+  {{- $pages = .RegularPagesRecursive -}}
+{{- end -}}
 {{- $pages = where $pages "Params.hiddenInRss" "ne" true -}}
+{{- $pages = where $pages "Layout" "not in" (slice "search" "archives") -}}
+{{- $pages = $pages.ByDate.Reverse -}}
+{{- with .Site.Config.Services.RSS.Limit -}}{{- if ge . 1 -}}{{- $pages = first . $pages -}}{{- end -}}{{- end -}}
 {{- printf "<?xml version=\"1.0\" encoding=\"utf-8\" standalone=\"yes\"?>" | safeHTML }}
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
-  <title>{{ .Site.Title }}</title><link>{{ .Permalink }}</link><description>{{ .Site.Params.description }}</description>
+  <title>{{ if not .IsHome }}{{ .Title }} — {{ end }}{{ .Site.Title }}</title><link>{{ .Permalink }}</link><description>{{ .Site.Params.description }}</description>
   <language>{{ .Site.Language.Lang }}</language><generator>Hugo</generator>
   {{ with .OutputFormats.Get "RSS" }}{{ printf "<atom:link href=%q rel=\"self\" type=\"application/rss+xml\" />" .Permalink | safeHTML }}{{ end }}
   {{ range $pages }}<item><title>{{ .Title }}</title><link>{{ .Permalink }}</link><guid>{{ .Permalink }}</guid><pubDate>{{ .PublishDate.Format "Mon, 02 Jan 2006 15:04:05 -0700" | safeHTML }}</pubDate><description>{{ .Description | default .Summary | html }}</description></item>{{ end }}

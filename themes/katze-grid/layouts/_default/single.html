@@ -1,23 +1,49 @@
 {{ define "main" }}
-{{ $isArticle := and .IsPage (eq .Section "posts") }}
+{{ $isArticle := partial "is-article.html" . }}
 {{ $author := .Params.author | default .Site.Params.author }}{{ if reflect.IsMap $author }}{{ $author = $author.name }}{{ end }}
-{{ $coverParams := .Params.cover | default dict }}{{ $coverHidden := .Site.Params.cover.hidden }}{{ if isset $coverParams "hidden" }}{{ $coverHidden = $coverParams.hidden }}{{ end }}
+{{ $coverParams := .Params.cover | default dict }}
+{{ $coverHidden := .Site.Params.cover.hidden }}{{ $coverHiddenInSingle := .Site.Params.cover.hiddenInSingle }}
+{{ if isset $coverParams "hidden" }}{{ $coverHidden = $coverParams.hidden }}{{ end }}
+{{ if isset $coverParams "hiddeninsingle" }}{{ $coverHiddenInSingle = $coverParams.hiddenInSingle }}{{ end }}
 <article class="article-panel panel">
-  <div class="article-heading">{{ if $isArticle }}<div class="panel-kicker">{{ with .Section }}{{ . | upper }}{{ end }} <span>{{ time.Format ":date_long" .Date }}</span></div>{{ end }}
-  <h1>{{ .Title }}</h1>
-  {{ if and $isArticle (not .Site.Params.hidemeta) }}<div class="article-meta">
-    {{ with $author }}<span>{{ . }}</span>{{ end }}
-    {{ if .Param "ShowReadingTime" }}<span>{{ .ReadingTime }} {{ i18n "minutesRead" }}</span>{{ end }}
-    {{ if .Param "ShowWordCount" }}<span>{{ .WordCount }} {{ i18n "words" }}</span>{{ end }}
-    {{ if and $isArticle .Site.Params.ShowBreadCrumbs }}{{ partial "breadcrumbs.html" . }}{{ end }}
-  </div>{{ end }}</div>
-  {{ if and (or .Params.showtoc .Site.Params.showtoc) .TableOfContents }}<details class="toc"{{ if .Site.Params.tocopen }} open{{ end }}><summary>{{ i18n "contents" }}</summary>{{ .TableOfContents }}</details>{{ end }}
-  {{ if and $isArticle .Params.cover.image (not $coverHidden) }}<figure class="article-cover"><img src="{{ .Params.cover.image | absURL }}" alt="{{ .Params.cover.alt | default .Title }}" loading="lazy" decoding="async">{{ with .Params.cover.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>{{ end }}
+  <div class="article-heading">
+    {{ if and $isArticle (.Param "ShowBreadCrumbs") }}{{ partial "breadcrumbs.html" . }}{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{ if and $isArticle (not (.Param "hidemeta")) }}
+    <ul class="article-meta" aria-label="{{ i18n "articleDetails" }}">
+      {{ with $author }}<li>{{ partial "meta-icon.html" "author" }}<span>{{ i18n "writtenBy" }} <span class="meta-value">{{ . }}</span></span></li>{{ end }}
+      <li>{{ partial "meta-icon.html" "updated" }}<span>{{ i18n "published" }} <time class="meta-value" datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format ":date_long" .Date }}</time></span></li>
+      {{ if .Param "ShowReadingTime" }}<li>{{ partial "meta-icon.html" "reading" }}<span><span class="meta-value">{{ .ReadingTime }}</span> {{ i18n "minutesRead" }}</span></li>{{ end }}
+      {{ if .Param "ShowWordCount" }}<li>{{ partial "meta-icon.html" "words" }}<span><span class="meta-value">{{ .WordCount }}</span> {{ i18n "words" }}</span></li>{{ end }}
+      {{ if and (ne (.Param "ShowLastMod") false) (gt (.Lastmod.Format "2006-01-02") (.Date.Format "2006-01-02")) }}<li>{{ partial "meta-icon.html" "updated" }}<span>{{ i18n "lastUpdated" }} <time class="meta-value" datetime="{{ .Lastmod.Format "2006-01-02" }}">{{ time.Format ":date_long" .Lastmod }}</time></span></li>{{ end }}
+    </ul>
+    {{ end }}
+  </div>
+  {{ if and (.Param "showtoc") .TableOfContents }}<details class="toc"{{ if .Param "tocopen" }} open{{ end }}><summary>{{ i18n "contents" }}</summary>{{ .TableOfContents }}</details>{{ end }}
+  {{ if and $isArticle .Params.cover.image (not $coverHidden) (not $coverHiddenInSingle) }}
+    {{ $cover := partial "resolve-image.html" (dict "page" . "src" .Params.cover.image) }}
+    <figure class="article-cover"><img src="{{ $cover.src | absURL }}" alt="{{ .Params.cover.alt | default .Title }}"{{ with $cover.width }} width="{{ . }}" height="{{ $cover.height }}"{{ end }} loading="eager" decoding="async">{{ with .Params.cover.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end }}</figure>
+  {{ end }}
   <div class="prose">{{ .Content }}</div>
   {{ if $isArticle }}{{ partial "extend_post_content.html" . }}{{ partial "comments.html" . }}{{ end }}
   {{ with .Params.tags }}<div class="tag-list">{{ range . }}{{ $tag := . }}{{ with site.GetPage (printf "/tags/%s" $tag) }}<a href="{{ .RelPermalink }}">#{{ $tag }}</a>{{ end }}{{ end }}</div>{{ end }}
-  {{ if and $isArticle .Site.Params.ShowShareButtons }}{{ $shareButtons := .Site.Params.shareButtons | default (slice "x" "reddit") }}<div class="share-row"><span>{{ i18n "share" }}</span>{{ range $shareButtons }}{{ $service := lower . }}{{ if eq $service "x" }}<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text={{ $.Title | urlquery }}&url={{ $.Permalink | urlquery }}">X</a>{{ else if eq $service "reddit" }}<a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/submit?url={{ $.Permalink | urlquery }}&title={{ $.Title | urlquery }}">Reddit</a>{{ else if eq $service "mastodon" }}<a target="_blank" rel="noopener noreferrer" href="https://mastodon.social/share?text={{ printf "%s %s" $.Title $.Permalink | urlquery }}">Mastodon</a>{{ else if eq $service "telegram" }}<a target="_blank" rel="noopener noreferrer" href="https://t.me/share/url?url={{ $.Permalink | urlquery }}&text={{ $.Title | urlquery }}">Telegram</a>{{ else if eq $service "email" }}<a href="mailto:?subject={{ $.Title | urlquery }}&body={{ $.Permalink | urlquery }}">Email</a>{{ end }}{{ end }}</div>{{ end }}
-  {{ if and $isArticle .Site.Params.editPost.URL }}{{ $editURL := .Site.Params.editPost.URL }}{{ if .Site.Params.editPost.appendFilePath }}{{ $editURL = printf "%s/%s" (strings.TrimRight "/" $editURL) .File.Path }}{{ end }}<p class="edit-post"><a href="{{ $editURL }}">{{ .Site.Params.editPost.Text | default "Suggest changes" }}</a></p>{{ end }}
+  {{ if and $isArticle (.Param "ShowShareButtons") }}
+  {{ $shareButtons := .Param "shareButtons" | default (slice "x" "reddit") }}
+  <div class="share-row">
+    <span>{{ i18n "share" }}</span>
+    {{ range $shareButtons }}
+      {{ $service := lower . }}
+      {{ if eq $service "x" }}<a target="_blank" rel="noopener noreferrer" href="https://twitter.com/intent/tweet?text={{ $.Title | urlquery }}&url={{ $.Permalink | urlquery }}">X</a>
+      {{ else if eq $service "reddit" }}<a target="_blank" rel="noopener noreferrer" href="https://www.reddit.com/submit?url={{ $.Permalink | urlquery }}&title={{ $.Title | urlquery }}">Reddit</a>
+      {{ else if eq $service "mastodon" }}<a target="_blank" rel="noopener noreferrer" href="https://mastodon.social/share?text={{ printf "%s %s" $.Title $.Permalink | urlquery }}">Mastodon</a>
+      {{ else if eq $service "telegram" }}<a target="_blank" rel="noopener noreferrer" href="https://t.me/share/url?url={{ $.Permalink | urlquery }}&text={{ $.Title | urlquery }}">Telegram</a>
+      {{ else if eq $service "email" }}<a href="mailto:?subject={{ $.Title | urlquery }}&body={{ $.Permalink | urlquery }}">Email</a>{{ end }}
+    {{ end }}
+    {{ if ne (.Param "ShowCopyLink") false }}<button class="copy-link" type="button" data-url="{{ .Permalink }}" data-copy-label="{{ i18n "copyLink" }}" data-copied-label="{{ i18n "linkCopied" }}" data-failed-label="{{ i18n "copyFailed" }}" hidden>{{ i18n "copyLink" }}</button><span class="copy-link-status" role="status"></span>{{ end }}
+  </div>
+  {{ end }}
+  {{ $editPost := .Param "editPost" }}
+  {{ if and $isArticle $editPost.URL }}{{ $editURL := $editPost.URL }}{{ if $editPost.appendFilePath }}{{ $editURL = printf "%s/%s" (strings.TrimRight "/" $editURL) .File.Path }}{{ end }}<p class="edit-post"><a href="{{ $editURL }}">{{ $editPost.Text | default "Suggest changes" }}</a></p>{{ end }}
 </article>
-{{ if and $isArticle .Site.Params.ShowPostNavLinks }}<nav class="article-nav panel" aria-label="{{ i18n "postNavigation" }}">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><small>← {{ i18n "previous" }}</small><span>{{ .Title }}</span></a>{{ end }}{{ with .NextInSection }}<a href="{{ .RelPermalink }}"><small>{{ i18n "next" }} →</small><span>{{ .Title }}</span></a>{{ end }}</nav>{{ end }}
+{{ if and $isArticle (.Param "ShowPostNavLinks") }}<nav class="article-nav panel" aria-label="{{ i18n "postNavigation" }}">{{ with .PrevInSection }}<a href="{{ .RelPermalink }}"><small>← {{ i18n "previous" }}</small><span>{{ .Title }}</span></a>{{ end }}{{ with .NextInSection }}<a href="{{ .RelPermalink }}"><small>{{ i18n "next" }} →</small><span>{{ .Title }}</span></a>{{ end }}</nav>{{ end }}
 {{ end }}

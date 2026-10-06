@@ -1,6 +1,8 @@
 {{- $pages := where .Site.RegularPages "Draft" false -}}
 {{- $out := slice -}}
 {{- range $pages -}}
+  {{- if and (not .Params.searchHidden) (ne .Layout "archives") (ne .Layout "search") -}}
   {{- $out = $out | append (dict "title" .Title "permalink" .RelPermalink "summary" (.Summary | plainify | htmlUnescape) "content" (.Plain | htmlUnescape) "tags" .Params.tags "date" (.Date.Format "2006-01-02") "section" .Section) -}}
+  {{- end -}}
 {{- end -}}
 {{- $out | jsonify -}}

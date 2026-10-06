@@ -30,6 +30,8 @@ jobs:
             ${{ runner.os }}-hugo-
       - name: Validate build
         run: hugo --panicOnWarning --printI18nWarnings --ignoreCache --gc
+      - name: Check theme regressions
+        run: python3 tests/test_katze_grid.py
 
   deploy:
     if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
