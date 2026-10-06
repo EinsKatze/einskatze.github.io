@@ -1,13 +1,11 @@
 ---
 title: "List of Interesting Things"
 date: 2025-01-13
+lastmod: 2026-10-05
 draft: false
 ---
 A curated collection of interesting tools, services, guides, and resources that I've found useful or noteworthy.
-
 <!--more-->
-
-> Last updated: 05.10.2026
 
 ## Archiving
 - [RedditToMarkDown](https://farnots.github.io/RedditToMarkdown/) - Save Reddit threads as Markdown files.
