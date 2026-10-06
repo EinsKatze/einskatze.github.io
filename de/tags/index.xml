@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
-  <title>EinsKatze</title><link>https://einskatze.github.io/de/tags/</link><description>EinsKatze&#39;s Blog</description>
+  <title>Tags — EinsKatze</title><link>https://einskatze.github.io/de/tags/</link><description>EinsKatze&#39;s Blog</description>
   <language>de</language><generator>Hugo</generator>
   <atom:link href="https://einskatze.github.io/de/tags/index.xml" rel="self" type="application/rss+xml" />
-  <item><title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title><link>https://einskatze.github.io/de/posts/win10_iot_upgrade/</link><guid>https://einskatze.github.io/de/posts/win10_iot_upgrade/</guid><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;EinsKatze:&lt;/strong&gt;&lt;br&gt;
-Moin Freunde, das ist im Grunde ein Gastbeitrag. Die komplette Anleitung wurde von TimLew geschrieben — riesiger Dank an ihn! 💖&lt;br&gt;
-Discord: &lt;code&gt;timlew&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item>
+  
 </channel></rss>

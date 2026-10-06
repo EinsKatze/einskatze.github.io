@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
-  <title>EinsKatze</title><link>https://einskatze.github.io/tags/</link><description>EinsKatze&#39;s Blog</description>
+  <title>Tags — EinsKatze</title><link>https://einskatze.github.io/tags/</link><description>EinsKatze&#39;s Blog</description>
   <language>en</language><generator>Hugo</generator>
   <atom:link href="https://einskatze.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
-  <item><title>Making a Mac Time Machine Backup on an SMB Share</title><link>https://einskatze.github.io/posts/mac_tm_backup/</link><guid>https://einskatze.github.io/posts/mac_tm_backup/</guid><pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate><description>&lt;p&gt;A step-by-step guide on how to configure Apple Time Machine to back up over an SMB network share using a sparse bundle virtual disk image.&lt;/p&gt;</description></item><item><title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title><link>https://einskatze.github.io/posts/win10_iot_upgrade/</link><guid>https://einskatze.github.io/posts/win10_iot_upgrade/</guid><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><description>&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;EinsKatze:&lt;/strong&gt;&lt;br&gt;
-Hi everyone, this is basically a guest post. This guide was written by TimLew — huge shoutout to him! 💖&lt;br&gt;
-Discord: &lt;code&gt;timlew&lt;/code&gt;&lt;/p&gt;
-&lt;/blockquote&gt;</description></item><item><title>List of Interesting Things</title><link>https://einskatze.github.io/posts/interesting_things/</link><guid>https://einskatze.github.io/posts/interesting_things/</guid><pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate><description>&lt;p&gt;A curated collection of interesting tools, services, guides, and resources that I&amp;rsquo;ve found useful or noteworthy.&lt;/p&gt;</description></item><item><title>Do a quick system scan with ClamAV</title><link>https://einskatze.github.io/posts/clamav_quickscan/</link><guid>https://einskatze.github.io/posts/clamav_quickscan/</guid><pubDate>Sun, 28 Jul 2024 00:00:00 +0000</pubDate><description>&lt;p&gt;Hey everyone! This is a short guide on how to download the portable version of ClamAV for Windows and run a quick scan on your system.&lt;/p&gt;</description></item>
+  
 </channel></rss>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel>
-  <title>EinsKatze</title><link>https://einskatze.github.io/posts/</link><description>EinsKatze&#39;s Blog</description>
+  <title>Posts — EinsKatze</title><link>https://einskatze.github.io/posts/</link><description>EinsKatze&#39;s Blog</description>
   <language>en</language><generator>Hugo</generator>
   <atom:link href="https://einskatze.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
   <item><title>Making a Mac Time Machine Backup on an SMB Share</title><link>https://einskatze.github.io/posts/mac_tm_backup/</link><guid>https://einskatze.github.io/posts/mac_tm_backup/</guid><pubDate>Thu, 18 Jun 2026 00:00:00 +0000</pubDate><description>&lt;p&gt;A step-by-step guide on how to configure Apple Time Machine to back up over an SMB network share using a sparse bundle virtual disk image.&lt;/p&gt;</description></item><item><title>Guide: Upgrade Windows 10 -&gt; Windows 10 IoT Enterprise LTSC</title><link>https://einskatze.github.io/posts/win10_iot_upgrade/</link><guid>https://einskatze.github.io/posts/win10_iot_upgrade/</guid><pubDate>Mon, 17 Mar 2025 00:00:00 +0000</pubDate><description>&lt;blockquote&gt;
